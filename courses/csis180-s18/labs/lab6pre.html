@@ -1,0 +1,126 @@
+<? require("header.html"); ?>
+<div class="lab">
+<h2>Lab 6: CSS: Text, Colors & Backgrounds</h2>
+<div class="row-fluid">
+<div class="span12">
+
+<div class="thumbnail">
+
+<div class="row-fluid">
+<div class="span6">
+<h3>Goals</h3>
+<p>Learn...</p>
+<ol>
+<li>how to apply CSS to HTML documents</li>
+<li>about font and text-related CSS properties</li>
+<li>how colors are defined and applied</li>
+<li>applying background images and patterns.</li>
+</ol>
+</div>
+
+<div class="span6">
+<h3>Key Concept</h3>
+<p>Cascading Style Sheets (CSS) can be used define almost every aspect of an HTML document's visual presentation.
+The beauty of CSS is that all the pages of a logical website can share the same stylesheet, which allows a
+designer to change the appearance of many web pages by changing the code in one file.
+</p>
+</div>
+</div>
+</div>
+
+<h3>Pre-lab</h3>
+<h4>Pre-lab Reading</h4>
+<ul>
+<li><strong>Textbook pp 207-222</strong></li>
+</ul>
+<h4>Pre-lab Activity</h4>
+<ol>
+<li><strong>exercise 11-1</strong></li>
+<li><strong>exercise 11-2</strong></li>
+
+</ol>
+<p>Use reading and activity to answer the Pre-lab Questions. <strong>Be sure to complete the activity and answer the pre-lab questions in Blackboard before the start of the lab period.</strong></p>
+
+
+<h3>In-lab</h3>
+<h4>Preparation</h4>
+<ul>
+<li>Always make sure you save your lab files in the appropriate folder, i.e., 
+<var>lab6</var>.
+</li>
+<li>For file names, only use lowercase letter and never use spaces.</li>
+</ul>
+
+
+<h4>1. Formatting Menus</h4>
+<ul>
+<li>Download <var><a href="labs/lab6/menu.html">menu.html</a></var> and save it to your <var>lab6</var> folder.</li>
+<li>Use the <var>menu.html</var>file and complete <strong>exercise 12-1 through 12-7</strong> using Notepad++. Refer to <strong>pages 225-258</strong> for help.</li>
+<li>It is OK to peek at the solution if you get lost, but do not look at it until you try to do all parts of the activity.</li>
+<li>Make sure <var>menu.html</var> validates at <a href="http://validator.w3.org/#validate_by_upload"><strong>http://validator.w3.org/#validate_by_upload</strong></a></li>
+<li>Show your instructor that <var>menu.html</var> is finished and validates.</li>
+</ul>
+
+<h4>2. Font & Text Questions</h4>
+<ul>
+<li>In Notepad++, create a webpage called <var>lab6.html</var></li>
+<li>Remember to include the basic HTML document structure shown on page 56 (Figure 4-7).</li>
+<li>Answer the following questions and use HTML  and CSS to appropriately markup and style your 
+answers according to the instructions in the questions below. Use the HTML <code>span</code> 
+tag with <code>class="answer"</code> to markup your answers below.  The style will be the
+same for all four questions.</li>
+<li><p>Font & Text:</p>
+<ol>
+<li>What is the name of the CSS property for changing the <span style="font-family: Georgia">font type</span>. Use embedded CSS so that  <code>.answer</code>  uses the Georgia font.</li>
+<li>What is the name of the CSS property to make the <em>font italic</em>.  Use embedded CSS so that <code>.answer</code> will be italic.</li>
+<li>What is the name of the CSS property to change the <span style="color:red">text color</span>.  Use embedded CSS so that <code>.answer</code> will have red text.</li>
+<li>What is the name of the CSS property to make <strong>text bold</strong>.  Use embedded CSS so that  <code>.answer</code>  will have bold text.</li>
+</ol>
+</li>
+<li>In the end, the answers in your final document should look like this: <span style="font-family: Georgia; color: red; font-weight:bold; font-style: italic">answer</span>. </li>
+<li>Save your <var>lab6.html</var> file. We will answer more questions at the end of the lab.</li>
+</ul>
+
+<h4>3. Adding Color</h4>
+<ul>
+<li>Download <var><a href="labs/lab6/bistro.html">bistro.html</a></var> and save it to your <var>lab6</var> folder.</li>
+<li>In your <var>lab6</var> folder, create a sub-folder called <var>images</var>.</li>
+<li>Download the following pictures into the <var>images</var> folder you just created:<br>
+<var><a href="labs/lab6/images/blackgoose.png">blackgoose.png</a></var><br>
+<var><a href="labs/lab6/images/bullseye.png">bullseye.png</a></var><br>
+<var><a href="labs/lab6/images/goose_shadow.png">goose_shadow.png</a></var><br>
+<var><a href="labs/lab6/images/gooseshadow.png">gooseshadow.png</a></var><br>
+<var><a href="labs/lab6/images/plaid.png">plaid.png</a></var><br>
+<var><a href="labs/lab6/images/purpledot.png">purpledot.png</a></var><br>
+<br>
+<li>Use the <var>bistro.html</var>file and complete <strong>exercise 13-1 through 13-7</strong> using Notepad++. Refer to <strong>pages 265-295</strong> for help.</li>
+<li>It is OK to peek at the solution if you get lost, but do not look at it until you try to do all parts of the activity.</li>
+<li>Make sure <var>bistro.html</var> validates at <a href="http://validator.w3.org/#validate_by_upload"><strong>http://validator.w3.org/#validate_by_upload</strong></a></li>
+<li>Show your instructor that <var>bistro.html</var> is finished and validates.</li>
+</ul>
+
+<h4>4. Color & Background Questions</h4>
+<ul>
+<li>Continue to answer the following questions in your<var>lab6.html</var>file.</li>
+<li><p>Color & Background:</p>
+<ol start="5">
+<li>What is the HTML color code (#hexcode) for <span style="background-color: #FF0">yellow</span>?   Use the HTML <code>span</code> tag with <code>class="answer"</code> to markup your answer below.  Then use embedded CSS so that  <code>.answer</code> will have a <strong>background color</strong> of yellow.</li>
+<li>What is the CSS property for specifying a  <span style="background-image: url(labs/lab6/images/purpledot.png); padding: 10px; color: white; font-weight: bold">background image</span>. You do not have to use this property, just name it.</li>
+<li>What is the CSS code to position a background image so that it does not repeat and is centered horizontally at the top.  You do not have to use this property, just write the code.</li>
+</ol>
+</li>
+<li>In the end, the answers in your final document should look like this: <span style="background-color: yellow; font-family: Georgia; color: red; font-weight:bold; font-style: italic">answer</span>. </li>
+<li>Save your <var>lab6.html</var> file.</li>
+</ul>
+
+
+
+
+
+<span class="thumbnail">
+<h3>Deliverables</h3>
+<p>Upload <var>lab6.html</var> to Blackboard.</p>
+</div><!--/span-->
+</div><!--/row-->
+</div>
+<? require("footer.html"); ?>

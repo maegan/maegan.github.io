@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Introduction to Computer Science Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="ico/favicon.ico">
+
+    <title>CSIS-110: Intro to CS</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CSIS-110: Intro to CS</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="schedule.html" class="active"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="syllabus.html" ><i class="fa fa-book"></i> Syllabus</a></li>
+            <li><a href="homework.html"><i class="fa fa-folder-open"></i> &nbsp;Homework</a></li>
+            <li><a href="contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <div class="page-header">
+        <h3>Course Schedule</h3>
+      </div><!--/.page-header -->
+
+      <div class="alert alert-success" role="alert">
+        <h4><strong><emp>Evening Exams, 7-9 pm:</emp></strong></br>
+        Wednesday 2/28:  RB202 (Key Auditorium)</br>
+        Thursday, 4/5:  RB202 (Key Auditorium)</h4> 
+      </div>
+
+
+      <div class="schedule">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-header">
+            <h3>Monday Lecture</h3>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-header">
+            <h3>Wednesday Lecture</h3>
+        </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-header">
+            <h3>Thursday/Friday Lab</h3>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Jan 15</h4>
+            <h5>No Class</h5>
+            <h6>Martin Luther King Day</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+            <h4>Jan 17</h4>
+            <h5>Course overview</h5>
+            <h6>CSI 1</h6>
+            <p>Go over the <a href="syllabus.html">Syllabus</a>, Information about <a href="lectureNotes/Pronoun worksheet.docx">Gender Pronouns</a>, and do a Disaster Recovery Activity.</p>
+            <p><a href="lectureNotes/18-01-17.pptx">Class Slides</a></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Jan 18/19</h4>
+            <h5>No Lab</h5>
+            <h6>First week of classes</h6>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+              <h4>Jan 22</h4>
+              <h5>Python Basics</h5>
+              <h6>P 1-2</h6>
+              <ul>
+                <li>Finish disaster recovery activity</li>
+                <li><a href="lectureNotes/18-01-22.pptx">Intro to Python</a></li>
+                <li>Quiz</li>
+              </ul>
+              <p class="due">HW 1 assigned</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+            <h4>Jan 24</h4>
+            <h5>Binary numbers</h5>
+            <h6>CSI 2</h6>
+            <ul>
+                <li>Return quizzes</li>
+                <li>Women in computing meeting Friday</li>
+                <li>Discuss Homework</li>
+              </ul>
+            <a href="lectureNotes/IntroCS2017.docx">Data Representation Notes</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+            <h4>Jan 25/26</h4>
+            <h5>Lab 1</h5>
+            <h6>Introduction</h6>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+              <h4>Jan 29</h4>
+              <h5>Data Representation: Numbers</h5>
+              <h6>CSI 3</h6>
+              <ul>
+                <li>Binary numbers</li>
+                <li>Octal/Hexadecimal numbers</li>
+                <li>Storage units</li>
+                <li>Signed magnitude notation</li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+              <h4>Jan 31</h4>
+              <h5>Python Images</h5>
+              <h6>P 4</h6>
+              <ul>
+                <li>Number representation practice</li>
+                <li>Step through HW1 python code</li>
+                <li>Python functions</li>
+                <li>For loops</li>
+                <li>Color functions</li>
+              </ul>
+            <a href="lectureNotes/18-01-31.pptx">Class notes</a>, <a href="lectureNotes/numRepPrac.docx">Number Representation Practice</a>, 
+            <a href="lectureNotes/numRepPracSoln.docx">Number Representation Solutions</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+              <h4>Feb 1/2</h4>
+            <h5>Lab 2</h5>
+            <h6>Colors and Pictures</h6>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 5</h4>
+            <h5>Data Representation: Text, Images, Audio</h5>
+            <h6>CSI 3</h6>
+            <ul>
+              <li>Importance of knowing number range</li>
+              <li>Storing Text</li>
+              <li>Text Compression</li>
+            </ul>
+            <a href="lectureNotes/18-02-05.pptx">Class notes</a>
+            <p class="due">HW 1 due</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 7</h4>
+            <h5>Python: color functions</h5>
+            <h6>P 6.1-6.7</h6>
+            <ul>
+              <li>Finish image and sound representation notes</li>
+              <li>Finish Python color notes</li>
+              <li><a href="homework/hw2.docx">Homework 2</a></li>
+              <li><a href="homework/collage">starter code for hw</a></li>
+            </ul>
+            <p class="due">HW 2 assigned</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 8/9</h4>
+              <h5>Lab 3</h5>
+              <h6>Transforming Pictures</h6>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 12</h4>
+            <h5>Gates and Circuits</h5>
+            <h6>CSI 4</h6>
+            <p><a href="homework/hw1PythonMMS18Solutions.docx">Homework 1 Solutions</a><br>
+              <a href="lectureNotes/18-02-12.pptx">Class notes</a></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 14</h4>
+            <h5>Python: Range function</h5>
+            <h6>P 6.1-6.7</h6>
+            <a href="lectureNotes/booleanPractice.pptx">Boolean practice problems</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 15/16</h4>
+            <h5>Lab 4</h5>
+            <h6>Boolean Logic &amp; Circuits</h6>
+
+            </div>
+        </div>
+      </div><!--/.row -->
+
+
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 19</h4>
+            <h5>Python review</h5>
+            <h6></h6>
+            <ul>
+              <li>Finish boolean and circuit practice</li>
+              <li>Loops</li>
+              <li>Conditionals</li>
+              <li>Homework 3 demos (starter, finished)</li>
+            </ul>
+              <p><a href="homework/hw3.docx">Homework 3</a>, 
+              <a href="homework/hw3template">starter code for hw</a>, 
+              <a href="homework/shatner.jpg">William Shatner image</a></p>
+        
+            <p class="due">HW 2 due</br>HW 3 assigned</p> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Feb 21</h4>
+            <h5>No Class</h5>
+            <h6>Conference</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Feb 22/23</h4>
+            <h5>No Lab</h5>
+			      <h6>No Classes</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 26</h4>
+            <h5>Python review for exam</h5>
+            <h6></h6>
+            <ul>
+              <li><a href="lectureNotes/studyGuideS18Ex1.docx">Study guide</a></li>
+              <li>Loops, <a href="lectureNotes/LoopsAndIfs.pptx">practice probs</a></li>
+              <li>Function writing, <a href="lectureNotes/Exam1PythonPractice.pptx">practice probs</a></li>
+              <li>Homework 2 <a href="homework/hw2PythonMMS18Soln.docx">solutions</a></li>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 28</h4>
+            <h5>Hardware</h5>
+            <h6>CSI 5.1, pp. 137-150</h6>
+            <ul>
+              <li><a href="lectureNotes/exam1PythonPracticeSolutions.pptx">Solutions</a> to python practice problems</li>
+              <li>Hardware <a href="lectureNotes/hardware.pptx">notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 1/2</h4>
+            <h5>Lab 5</h5>
+            <h6>Alice</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 5</h4>
+            <h5>Hardware continued</h5>
+            <ul>
+              <li>Returned exams</li>
+              <li>Input/output devices</li>
+              <li>RAM/ROM/Secondary storage</li>
+              <li>Disk access time</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 7</h4>
+            <h5>Finish hardware</h5>
+            <h6></h6>
+            <ul>
+              <li>Hardware show and tell</li>
+              <li>Primary vs secondary storage</li>
+              <li>Cache, CPU, registers</li>
+              <li><a href="lectureNotes/disks.doc">Worksheet</a> about disk access times</li>
+            </ul>
+            <p class="due">Programming portion of HW3 due</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 8/9</h4>
+            <h5>Lab 6</h5>
+            <h6>Scheme</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 12</h4>
+            <h5>Von Neumann Architecture</h5>
+            <h6>CSI pp. 129-137</h6> 
+            <ul>
+              <li>Disk worksheet, <a href="lectureNotes/disks solutions.doc">solutions</a></li>
+              <li>Von Neumann, <a href="lectureNotes/vonNeumannPython.pptx">notes</a></li>
+              <li><a href="homework/hw4Template">Starter</a> code for hw4</li>
+            </ul>
+            <p class="due">Written portion of HW 3 due<br><a href="homework/hw4PythonMMS18.docx">HW 4</a> assigned</p> 
+            <p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 14</h4>
+            <h5>Sound Intro</h5>
+            <h6>P 7, 8</h6>
+            <ul>
+              <li>How sound works</li>
+              <li>Digitizing sound</li>
+              <li>Recording sounds</li>
+              <li>Manipulating sounds</li>
+            </ul>
+            <p><a href="lectureNotes/soundIntro2018.ppt">Lecture slides</a></p>
+ 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 15/16</h4>
+            <h5>Lab 7</h5>
+            <h6>Sound</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 19</h4>
+            <h5>Machine Language</h5>
+            <h6></h6>
+            <ul>
+              <li>Return HW3 -- solutions <a href="homework/S18hw3PythonSOLUTIONS.docx">here</a></li>
+              <li>Conditionals in assembly language</li>
+              <li>Assembly language <a href="lectureNotes/AssemblyWorksheet.docx">worksheet</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 21</h4>
+            <h5>Python: Copy/clip</h5>
+            <h6>P 9</h6>
+            <ul>
+              <li>Review functions</li>
+              <li>Make empty sounds</li>
+              <li>Reverse sounds</li>
+            </ul>
+            <a href="lectureNotes/18-03-21.ppt">Lecture slides</a></br>
+            Assembly language worksheet <a href="lectureNotes/Assembly worksheet solutions.pdf">Solutions</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 22/23</h4>
+            <h5>Lab 8</h5>
+            <h6>Von Neumann</h6>
+
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Mar 26</h4>
+      			<h5>No Class</h5>
+      			<h6>Spring Break</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Mar 28</h4>
+            <h5>No Class</h5>
+      			<h6>Spring Break</h6>
+		      </div>
+        </div>
+        <div class="col-sm-4">
+         <div class="thumbnail sch-no">
+            <h4>Mar 29/30</h4>
+            <h5>No Class</h5>
+            <h6>Spring Break</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Apr 2</h4>
+            <h5>No Class</h5>
+      			<h6>Easter Break</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 4</h4>
+            <h5>More Sound Practice</h5>
+            <h6></h6>
+            <ul>
+              <li><a href="lectureNotes/18-04-04.pptx">Lecture slides</a></br>
+                Machine language practice <a href="lectureNotes/Machine Language Practice.doc">worksheet</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Apr 5/6</h4>
+            <h5>No Lab</h5>
+            <h6>Snow day makeup</h6>
+            <p class="due">HW 4 due</p>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 9</h4>
+            <h5>Animations</h5>
+            <h6>P 14</h6>
+            <ul>
+              <li>Making movies</li>
+              <li>Making animations with JES</li>
+            </ul>
+            <a href="lectureNotes/ch14.ppt">Lecture slides</a>
+
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 11</h4>
+            <h5>Animations, cont'd</h5>
+            <h6></h6>
+            <ul>
+              <li>Animation practice</li>
+              <li><a href="homework/hw5Template">Starter</a> code for hw5 (need to put the .py extention on it when you save it).</li>
+            </ul>
+            <p class="due"><a href="homework/hw5PythonMMS18.docx">HW 5</a> assigned</p>  
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 12/13</h4>
+            <h5>Lab 9</h5>
+            <h6> Functioning with Sound</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 16</h4>
+            <h5>Operating Systems</h5>
+            <h6>CSI 7</h6>
+            <a href="lectureNotes/Operating Systems 2015.ppt">Lecture slides</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 18</h4>
+            <h5>Operating Systems</h5>
+            <ul>
+              <li>OS practice <a href="lectureNotes/Memory Management Using Dynamic Partitions.docx">worksheet</a></li>
+              <li>Extra credit <a href="lectureNotes/ExtraCreditS18Ethics.docx">assignment</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 19/20</h4>
+            <h5>Lab 10</h5>
+            <h6>OS and Python fun!</h6>          
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 23</h4>
+            <h5>Artificial Intelligence</h5>
+            <h6>CSI 8</h6>
+            <ul>
+              <li>What is AI?</li>
+              <li>Turing test</li>
+              <li>Thinking Machines</li>
+              <li>Language processing</li>
+              </ul>
+              <a href="lectureNotes/AI17.pptx">Lecture slides</a></li>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 25</h4>
+            <h5>Artificial Intelligence</h5>
+            <h6></h6>
+            <ul>
+              <li>Pattern Recognition</li>
+              <li>Image Analysis</li>
+              <li>Neural Networks</li>
+              <li>Language processing</li>
+              <li>Practice python problems for final:
+                <ul>
+                  <li><a href="lectureNotes/functionPractice.pptx">Python practice problems</a>
+                  </li>
+                  <li><a href="lectureNotes/PythonPractice.docx">More Python problems</a></li>  </ul></li>                
+            </ul>
+            <p class="due">HW 5 due</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 26/27</h4>
+            <h5>Lab 11</h5>
+            <h6>Artificially Intelligence</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>April 30</h4>
+            <h5>Last Day of Class</h5>
+            <h6>Recap and Review</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>May 2</h4>
+            <h5>Study for final</h5>
+            <ul>
+              <li><a href="lectureNotes/studyguideFinalS18PythonMM.docx">Study guide</a></li>
+              <li>Solutions for <a href="lectureNotes/functionPractice">functionPractice.pptx</a> functions</li>
+              <li>Solutions for <a href="lectureNotes/PythonPracticeSolutions">PythonPractice.docx</a> functions</li>              
+              <li>Solutions for <a href="homework/hw5PythonMMS18Solutions.docx">homework 5</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-may">
+            <h4>May 4</h4>
+            <h5>Final Exam!!</h5>
+            <p>6:30pm-8:30pm</br>
+            RB202</p>
+          </div>
+        </div>
+      </div><!--/row-->
+      </div>
+           
+    </div><!--/.container -->
+  </div><!--/.content-->
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+       <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+        &copy; 2017 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/docs.min.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

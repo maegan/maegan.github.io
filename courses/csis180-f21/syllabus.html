@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Web Design Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="ico/favicon.ico">
+
+    <title>CSIS-180: Web Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CSIS-180: Web Design</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="schedule.html"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="syllabus.html" class="active"><i class="fa fa-book"></i> Syllabus</a></li>
+            <li><a href="projects.html"><i class="fa fa-folder-open"></i> &nbsp;Projects</a></li>
+            <li><a href="contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <div class="page-header">
+        <h3>Course Syllabus</h3>
+      </div><!--/.page-header -->
+      <!-- Create panels to display content -->
+
+
+      <div class="row">
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">When does the course meet?</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+               <div class="col-sm-12">
+              <p><b>Lecture:</b></br> <span class="indent">Monday and Wednesday</span> </br> <span class="indent">
+              4:00PM-5:00PM</span> </br> <span class="indent">RB340</span></p></div>
+              <div class="col-sm-6">
+                  <p><b>Lab Section 04T:</b> </br><span class="indent">Tuesday</br><span class="indent">10:40AM-12:40PM
+                  </span> </br> <span class="indent"> RB330</span></p>
+              </div>
+               <div class="col-sm-6">
+              <p><b>Lab Section 10T:</b> </br><span class="indent">Tuesday</span></br><span class="indent"> 3:20PM-5:20PM
+              </span> </br> <span class="indent"> RB304</span></p>
+            </div>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Instructor</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Dr. MaryAnne Egan</br>Professor of Computer Science</p>
+              <p>Some of the courses Dr. Egan has taught over the last 20 years at Siena include
+                Introduction to Computer Science, Web Design, Introduction to Programming,
+                Diversity in Computer Science and Web Programming. </p>
+              <a class="btn btn-warning" href="contact.html" role="button" >Contact</a>
+              <a class="btn btn-danger" href="contact.html" role="button" >Office Hours</a>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Textbooks</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><strong>Required: </strong>
+              zyBooks Web Programming online textbook</p>
+              <div class="thumbnail">To use this book, sign in or create an account at <a href="http://learn.zybooks.com">learn.zybooks.com</a>, enter zyBook code <var>SIENACSIS180EganFall2021 </var> and subscribe.  A subscription is $77 (includes both the book and zylabs) and will last until December 7, 2021.</div>
+              </p>
+              <hr>
+              <p><strong>Required: </strong><a href="http://www.htmlandcssbook.com/">HTML & CSS: design and build websites by Jon Duckett</a></p>
+              <div class="thumbnail">I've been able to find it on Amazon for somewhere between $7 (used) and $16 (new) </div>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Topics</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>For a complete list of topic covered see the <a href="schedule.html">Course Schedule</a></p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Pre-requisites</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>None</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-6">
+<div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Mode of Instruction</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>This class is being taught in person.  Attendance is required and there is no option for remote attendance, unless explicitly stated by the instructor, such as you may have experienced during the past year because of COVID restrictions. Please pay attention to the attendance policy (below in syllabus) which outlines policies that apply to absences.  In addition, deadlines for assignments will be enforced.</p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Course Learning Goals</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><strong>Design and implement functional  web sites</strong> using HTML (Hypertext Markup Language) and CSS (Cascading StyleSheets).</p>
+              <p><strong>Integrate open source components</strong> into new and unique web page designs that follow the best professional practices for presentation on mobile and tablet devices.</p>
+              <p><strong>Web design concepts and principles</strong> including the importance of semantic markup, accessibility, meta information, separation of content and style, and document standardization/validation in order to create web pages that are widely accessible and highly extensible.</p>
+              <p><strong>Learn practical skills </strong>to help identify, download, install, and effectively use software for authoring web content, and creating web graphics.</p>
+              <p><strong>Enhance abstract thinking skills</strong> by learning how to create page  layouts,  interactive data forms and web site navigation menus.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+          
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Grades</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Grading</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Final grades will be based on the following weights:</p>
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <td>10%</td>
+                    <td><strong>zyBooks Activities</strong></td>
+                  </tr>
+                  <tr>
+                    <td>30%</td>
+                    <td><strong>3 Web Site Projects</strong></td>
+                  </tr>
+                  <tr>
+                    <td>25%</td>
+                    <td><strong>8 Labs</strong>: pre-lab work, attendance &amp; participation</td>
+                  </tr>
+                  <tr>
+                    <td>15%</td>
+                    <td><strong>Mid-term Exam</strong></td>
+                  </tr>
+                  <tr>
+                    <td>20%</td>
+                    <td><strong>Final Exam</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Letter grades will be assigned based on your numeric final average:</p>
+              <table class="table table-bordered table-hover table-condensed">
+                <tbody>
+                  <tr>
+                    <td>A</td><td>&gt;= 93.0</td>
+                    <td>A-</td><td>&gt;= 90.0</td>
+                    <td>B+</td><td>&gt;= 87.0</td>
+                  </tr>
+                  <tr>
+                    <td>B</td><td>&gt;= 83.0</td>
+                    <td>B-</td><td>&gt;= 80.0</td>
+                    <td>C+</td><td>&gt;= 77.0</td>
+                  </tr>
+                  <tr>
+                    <td>C</td><td>&gt;= 73.0</td>
+                    <td>C-</td><td>&gt;= 70.0</td>
+                    <td>D+</td><td>&gt;= 67.0</td>
+                  </tr>
+                  <tr>
+                    <td>D</td><td>&gt;= 63.0</td>
+                    <td>D-</td><td>&gt;= 60.0</td>
+                    <td>F</td><td>&lt; 60.0</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Expectations about grading</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>An average grade is typically B- to B.  To earn a grade of B+ or higher requires consistently scoring above 85% on exams and quizzes and completing project work that is high quality and demonstrates effort beyond just completing the basic requirements. Earning an A requires consistently scoring above 90% on exams and quizzes and completing project work of exceptional quality, i.e., going way beyond the basic requirements.</p>
+              <p>On the Midterm and Final exams:</p>
+              <ul>
+                <li>50% of the questions are  knowledge and fact-type questions based on information  presented in the textbook and reinforced in lecture and lab.</li>
+                <li>25% of the questions are concept-type questions based on material covered in lecture and lab that is not adequately explained in the textbook. Thus, students should attend lecture and lab, take notes, and review lecture material prior to the exams.</li>
+                <li>25% of the questions  are  based  on the reading (textbook and web sources) and the material may NOT be directly presented in lecture. Thus, it is particularly important to do the reading and not rely entirely on your lecture notes.</li>
+              </ul>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Web Site Projects</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>There will be <strong>three</strong> major web site projects due throughout the semester each requiring 20 or more hours of work outside of lecture and lab. </p>
+              <p>Project descriptions will be posted at least two weeks before the due date (see the <a href="projects.html">project page</a>).  Due dates will be announced on Canvas and put on the <a href="schedule.html">course schedule</a>.</p>
+              <p>All projects are <strong>individual</strong> projects and <strong>late projects will not be accepted</strong> and will be given a grade of zero.  Thus, it is important that you submit all your work prior to the deadline even if you have not completed the entire project.   </p>
+              <p>Projects will be submitted though Repl.it.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Final Exam</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>The Final Exam will be given during the designated final exam week, which is the week after the last day of class.</p>
+              <p> Though the end of the semester may seem far off, I advise you <strong>not to purchase a ticket to return home until you know the dates of all your final exams.</strong></p>
+              <p>If you cannot attend the scheduled Final Exam and do not provide a serious documented excuse, you will receive a zero. </p>
+              <p>While the final exam will focus on material from the second half of the semester, it will also include material covered on the Midterm Exam.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Labs</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Students must prepare for lab by reading assigned material (book and web sources) and completing an online material in either Canvas or ZyLabs. <!--During lab, students will complete tutorials, activities, and small design projects. Each lab will include specific deliverables that are due before the next lab.--></p>
+              <p><strong>Lab Grading</strong></p>
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr><td>30%</td><td><strong>Pre-lab Online Work</strong></td></tr>
+                  <tr><td>30%</td><td><strong>Attendance &amp; Participation</strong></td></tr>
+                  <tr><td>40%</td><td><strong>Lab  Deliverable</strong></td></tr>
+                </tbody>
+              </table>
+              <p><strong>Pre-lab Online Work</strong></p>
+              <p>Online work will be posted on Canvas at least 4 days before each lab session. The work must be completed before the start of the lab period, otherwise students will be given a grade of zero.</p>
+              <p><strong>In-lab</strong></p>
+              <p>During lab, students will be asked to complete an activity and submit a deliverable, which is typically one or more documents (HTML, CSS, and images).  Students are expected to complete work during lab. This allows the instructor to verify that  students are completing the lab work and collaborating appropriately. Thus, students are not allowed to complete lab work <strong>before</strong> the lab period.      </p>
+              <p> <strong>Lab Deliverable</strong></p>
+              <p>It is common for a lab activity to take more than the allotted time (2 hours).  Thus, students are expected to complete the lab activity on their own and each individual must submit the deliverable before the start of the next lab period, otherwise they will receive a zero on the lab deliverable. After the lab session, students are not permitted to collaborate or share work done outside of lab.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Attendance</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Lecture Attendance</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>A student is expected to attend every lecture. It is the student's responsibility to be aware of this policy.</p>
+              <p>Students can receive up to a 10% penalty toward their final average for excessive absences, lateness, or disruption during lecture.  Students who are more than 10 minutes late will be marked absent and absence penalties will be incurred.</p>
+              <p>Students can have <strong>two unexcused absences without any penalty.</strong> But after two, students will receive a 1% penalty for each unexcused absence (maximum of 10% total penalty).</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Lab Attendance</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Students are required to attend all lab sessions. There is a 10% penalty toward the individual lab for arriving late. Students who
+              are more than 10 minutes late will be marked absent. In addition, there is a 10% penalty for leaving early, i.e., leaving before the
+              2 hour lab period is over unless a student has completed the lab and submitted the deliverable.</p>
+              <p>Students who miss lab entirely receive a 30% penalty for the lab and  must still submit the pre-lab work and the lab
+              deliverable before the next lab period, otherwise they will lose an additional 30% and 40%, respectively. In addition, students
+              who miss two or more labs (unexcused), will receive additional penalties describe below:</p>
+              <table class="table table-bordered table-hover">
+                <tbody>
+                <tr>
+                  <td>2 unexcused lab absences</td>
+                  <td>3% penalty on final average</td>
+                </tr>
+                <tr>
+                  <td>3 unexcused lab absences</td>
+                  <td>7% penalty on final average</td>
+                </tr>
+                <tr>
+                  <td>4 unexcused lab absences</td>
+                  <td>15% penalty on final average</td>
+                </tr>
+                <tr>
+                  <td>5 unexcused lab absences</td>
+                  <td>Automatic failure from the course (no exceptions)</td>
+                </tr>
+                </tbody>
+              </table>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Excused Absences</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><strong>Lecture: </strong>Students can be excused (and not penalized) from lecture for illnesses, job interviews, and  serious commitments such as athletic or academic trips/competitions. However, students must inform the instructor as soon as possible, <strong>provide proof/documentation,</strong> and take responsibility to acquire notes and information from other students.</p>
+              <p><strong>Lab:</strong> Missing lab is more serious than missing lecture because labs involve activities that cannot be easily duplicated outside of the lab session and these activities are essential to the learning goals in the course. Students can be excused (not penalized) from lab and allowed to submit late quizzes and deliverables but the following rules will be strictly enforced:</p>
+
+              <ul>
+                <li>Job interviews will <strong>NOT</strong> be considered a valid excuse for missing lab. Do not schedule job interviews during your lab time unless you are willing to accept the penalties. </li>
+                <li>Practices (athletics), regularly scheduled extra curricular activities, and weekly obligations in other courses will&nbsp;<strong>NOT</strong>&nbsp;be considered a valid excuses for missing lab. <strong>Students should not register for this class if such activities conflict with the lab session.</strong> </li>
+                <li>Traveling to athletic games that are documented by the Athletic Department are a valid excuse. However, <strong>if you are going to miss more than three labs due to games, it is recommended that you drop the course and take it in the off season.</strong> </li>
+                <li>For&nbsp;<strong>illness or medical emergencies</strong>, students WILL have to show documentation (a doctor's note,  release form, receipt or equivalent) that verifies the excuse. </li>
+                <li>For&nbsp;<strong>family emergencies</strong>, funerals, or other serious commitments, students should contact the office of Student Affairs or Academic Affairs. If the emergency is serious, ask an authorized school official to contact all your instructors regarding your absence. If an excuse is not serious enough to contact an authorized school official then the excuse is not serious enough to be accepted by the instructor.</li>
+              </ul>
+              <p>The instructor makes the final decision to excuse or not to excuse an absence. If you are concerned that an absence will not be excused, you should contact the instructor as soon as possible.         </p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Academic Integrity</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Exams</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+                Students caught cheating on the Midterm or Final Exam will:
+                <ul>
+                  <li>receive a zero on the exam</li>
+                  <li>be penalized a full letter-grade in the course</li>
+                  <li>have a letter describing the student's actions sent to Siena's Vice President of Academic Affairs</li>
+                </ul>
+                <p>During an exam period, students cannot share information, look at each other's tests, or use unauthorized materials. </p>
+               
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Pre-lab work</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><strong>Students must complete pre-lab work independently.</strong></p>
+              <p> Students should not work with any other students to answer pre-lab questions. Students may use the textbook, notes, or other sources to help answer questions. </p>
+              <p>Students who inappropriately collaborate on pre-lab work will be given a zero on the pre-lab (30% penalty for the entire lab). Students who cheat a 2nd time will receive a zero on the pre-lab, will be penalized a full letter-grade  in the course, and a letter describing the student's actions will be sent to Siena's Vice President of Academic Affairs.  </p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Lab Collaboration</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><strong>Only collaborate during the lab session:</strong>The two-hour lab period is the only time that students are allowed to share code and collaborate, but they can only share lab deliverables, not project work. The lab session is supervised by the instructor who can provide guidance and feedback on what constitutes an appropriate level of help.</p>
+              <p><strong>After lab, students are expected to work on their own.</strong>In seeking help outside of lab, it is natural to want to share code. However, students should not share code written outside of the lab session.  Instead, students who wish to help each other should talk about  their problems in general or abstract ways, which is an important cognitive process in becoming a better, independent coder.  This instructor considers  plagiarism to be instances where a student submits lab deliverables where they cannot explain the purpose, function, and details of the submitted code.</p>
+              <p><strong>Your goal is to become an independent problem solver:</strong> An important goal in this course is for students to learn strategies for becoming more independent with respect to problem solving, coding, and debugging. Towards the end of the course, students should not need excessive help from classmates, tutors, or even the instructor.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Projects &amp; Lab Deliverables</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><strong>Cite your sources:</strong> It is very easy to copy code (HTML, CSS, JavaScript, etc.) from other sources and claim it as your own.  This is academically dishonest and considered plagiarism.  However, in web design, it is considered professionally acceptable to use open source code (HTML, CSS, Javascript, etc.) and non-copyrighted design components (layouts, menus, etc.) as long as such usage is documented by <strong>giving the original author  credit via citation/footnote in the newly published document</strong>. Documenting sources should be done by using HTML citations  and by using comments in other source files (CSS and JavaScript).</p>
+
+              <p><strong>Only use open and public sources:</strong> In this course, integrating code from open  sources   is considered an acceptable practice as long as the integration is non-trivial and leads to a design that is significantly different when compared to the original open/public sources.  Students will not be penalized for using other authors' code as long as the source is cited and as long as the code comes from an open source or public domain. In lecture, the instructor will teach students strategies for identifying open and public domain sources vs. protected, commercial and copyrighted sources.</p>
+
+              <p><strong>Do not share your code: </strong> While it is natural for students to help each other outside of lab, students retain more knowledge if they attempt to write and debug code on their own. It is acceptable for students to help each other understand general concepts, but students are prohibited from sharing their code  or writing code for another student.   </p>
+
+              <p><strong>Do not seek excessive help:</strong> It is appropriate to ask for or provide help solving a coding problem as long as it is done in a general or abstract way. Appropriate examples include: helping a peer understand an error message, sharing debugging strategies, or explaining a  concept related to a specific problem. But, it is inappropriate to have any other students (including tutors) solve your problems directly.  Seeking excessive help is a form of cheating. Inappropriate help includes:
+                <ul>
+                  <li>Asking a peer or tutor to write  code for you</li>
+                  <li>looking at another student's working solution</li>
+                  <li>receiving excessive (step-by-step) help in directly completing a project or lab</li>
+                </ul>
+              </p>
+
+              <p><strong>If you do not cite code, you better understand it: </strong> Integrating code from multiple sources into a new, unique design often requires  great effort to get all the parts to work together properly.  However, it is important that you can point to the parts of your code that you wrote yourself and the parts  taken from other sources. If a student cannot explain the purpose, function, and details of the code that they claim to have written themselves, the code will be considered plagiarized.</p>
+
+              <p><strong>Know the penalties: </strong>Students who present other authors' code, documents, images, or designs as their own will receive a grade of zero on the entire project or lab. Students who commit plagiarism a second time will again receive a zero, but will also be penalized a full letter-grade  in the course and a letter describing the student's violation will be sent to Siena's Vice President of Academic Affairs </p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Educational Assistance, Access, and Accommodations</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Student Success Services</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Siena College offers many services to help student success. If you are need of additional assistance, please reach out to your instructor, faculty advisor, or another Siena College community staff member.</p>
+              <p>Additional information about the types of services Siena College offers and how you can access these services can be found on the <a href="https://www.siena.edu/resources/?audience=students&category=">Student Resources webpage</a>.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Student Academic Success and Engagement (SASE)</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>The Student Academic Success and Engagement (SASE) office serves as a key point of reference for students:
+                <ul>
+                  <li>in transition to Siena</li>
+                  <li>in need of academic advising/assistance/tutoring</li>
+                  <li>navigating College policies, procedures, requirements, and standards</li>
+                  <li>requesting late course grading options and late course add/drop/withdrawals</li>
+                  <li>seeking (along with their parents and faculty) assistance in reaching resolution of academic progress issues</li>
+                  </ul></p>
+                  <p> <strong>SASE Contact:</strong>
+                  <ul>
+                    <li><strong>Email:</strong> studentsuccess@siena.edu</li>
+                    <li><strong>Phone:</strong> 518-783-2341</li>
+                    <li><strong>Office:</strong> Siena Hall, Room 215</li>
+                    <li><strong>Website:</strong> SASE <a href="https://www.siena.edu/offices/student-academic-success-and-engagement/">website</a></li></ul></p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Office of Accessibility</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Siena is very supportive of students facing additional challenges. The resources that Siena provides can be found online. If you require additional support to succeed in this class, please make sure you register with the Disability Services Office and inform that you have registered with them. </p>
+
+              <p>The following services are provided, when appropriate, to students with disabilities:
+                <ul>
+                  <li>Faculty Notification</li>
+                  <li>Alternative testing arrangements, including extended time</li>
+                  <li>Advocacy</li>
+                  <li>Note Taking Services</li>
+                  <li>Informal counseling</li>
+                  <li>Information for obtaining taped, Braille, or large print text</li>
+                  <li>Other accommodations tailored to your specific needs</li>
+                </ul>
+              </p>
+              <p>If you have a documented disability needing academic adjustments or accommodations, please speak with me during the first two weeks of class. All discussions will remain confidential. You  should also contact Julia Gold, Director of Services for Students with Disabilities.</p>
+
+              <p><strong>Contact: </strong>Julia Gold, Director of Services for Students with Disabilities</p>
+              <ul>
+                <li><strong>Email: </strong>jgold@siena.edu </li>
+                <li><strong>Phone: </strong>518-783-4239</li>
+                <li><strong>Office: </strong>Foy Hall, Room 109</li>
+                <li><strong>Website: </strong><a href="https://www.siena.edu/offices/accessibility/">Siena College, Office of Accessibility</a></li></ul>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div>
+
+
+        
+
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Tutoring</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>The Computer Science Department Tutoring Schedule is available <a href="https://sienacsistutoring.github.io/">here</a>.
+                </p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Inclusive Classroom and Diversity</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>In our Franciscan community, diversity is an invitation to celebrate the uniqueness of each individual, as well as the cultural differences that enrich us all. </p>
+              <p>In this course, I will do my best to ensure that students from all backgrounds and perspectives will be served equitably. The diversity that students bring to this class will be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful and inclusive of the many identities of students in terms of gender, sexual orientation, disability, age, socioeconomic status, ethnicity, race, culture, perspective, and other background characteristics. Your suggestions about how to improve the value of diversity and inclusiveness in this course are encouraged and appreciated.
+                </p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Reporting Misconduct</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>In any case of possible bias or sexual misconduct, either in the classroom or anywhere on campus, you are encouraged to file a report online or in person with Lois Goland. Any Siena community member, who experiences or observes an incident of bias or misconduct, including faculty, staff and students, can file a report through this system. More information and resources around procedures dealing with sexual misconduct and discrimination and harassment are available online.</p>
+              <p><strong>Contact: </strong>Lois Goland, Title IX / Title VII Officer</p>
+              <ul>
+                <li><strong>Email: </strong>lgoland@siena.edu  </li>
+                <li><strong>Phone: </strong>518-782-6673</li>
+                <li><strong>Office: </strong>Sarazen Student Union, Room 235</li>
+                <li><strong>Report an Incident Online: </strong><a href="https://www.siena.edu/offices/title-ix-eeo/">Siena College, Title IX / EEO Office</a></li></ul>
+
+       
+ 
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </div><!-- /.content -->
+
+<div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Policies</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Pandemic/Emergency Preparedness</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Students are instructed to bring all texts and a copy of the
+              syllabus/course schedule home with you in the event of a College
+              Closure. The Academic Calendar will be adjusted upon reopening; so
+              be prepared for the possibility of a short mini-semester; rescheduled
+              class/exam period; and /or rescheduling of the semester, depending on
+              the length of the closure.</p>
+              <p>If your situation permits, you should continue with readings and
+              assignments to the best of your ability, per the course schedule.
+              You will be given instructions regarding how to deal with paper
+              assignments requiring library or other required research by me, as needed.</p>
+              <p>Online office hours will be used by me in order to maintain
+              contact with my students. You will be able to “check-in” with
+              questions that you have. Remember,
+              internet, mail delivery, and telephone services may also be
+              impacted by a Pandemic or other emergency event.</p>
+              <p>Finally, stay connected with information regarding the status of
+              the College’s status and reopening schedule by monitoring the Siena
+              web site, <a href="http://www.siena.edu">www.siena.edu</a>.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Masks</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Masks are required for all unvaccinated individuals in this classroom/laboratory. The instructor reserves the right to require masks at any time of any/all students, regardless of vaccination status.</p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">College Policies</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><i class="fa fa-balance-scale"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/academic-integrity-policy/">Academic integrity policy</a></p>
+              <p><i class="fa fa-universal-access"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/accessibility/">Office of Accessibility</a></p>
+              <p><i class="fa fa-fire"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/emergency-information/">Emergency preparedness</a></p>
+              <p><i class="fa fa-snowflake-o"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/severe-weather-policy/">Severe weather policy</a></p>
+              <p><i class="fa fa-user"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/student-class-attendance-policy/">Attendance policy</a></p>
+             
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </div><!-- /.content -->
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+          &copy; 2017 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>

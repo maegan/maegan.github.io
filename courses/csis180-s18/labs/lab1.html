@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Web Design Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="../ico/favicon.ico">
+
+    <title>CSIS-180: Web Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="../css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../theme.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CSIS-180: Web Design</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="../schedule.html"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="../syllabus.html" ><i class="fa fa-book"></i> Syllabus</a></li>
+            <li><a href="../projects.html"><i class="fa fa-folder-open"></i> &nbsp;Projects</a></li>
+            <li><a href="../contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+    	<div class="page-header">
+        	<h3>Lab 1: HTML Documents &amp; Structure</h3>
+      </div><!--/.page-header -->
+
+      <div class="row">
+
+      	<div class="col-sm-6">
+        	<div class="panel panel-info">
+            	<div class="panel-heading">
+              		<h2 class="panel-title">Goal</h2>
+            	</div><!--/.panel-heading -->
+
+            	<div class="panel-body">
+               		<p><strong>Learn about...</strong></p>
+					<ul class="list-group">
+            <li class="list-group-item">The overall structure of HTML documents and how they are different than other types of documents.</li>
+            <li class="list-group-item">Creating HTML documents using Notepad++.</li>
+            <li class="list-group-item"> W3C validation of HTML documents. </li>
+					</ul>
+            	</div><!--/.panel-body -->
+       		</div><!--/.panel-info -->
+       	</div><!--/.col-sm-6 -->
+ 
+      	<div class="col-sm-6">
+      	   <div class="panel panel-info">
+            <div class="panel-heading">
+              	<h2 class="panel-title">Key Concept</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              HTML documents are  text documents structured with special markup tags also called elements. Unlike other document formats such as PDF and Microsoft Word, HTML source code is human readable. Also, HTML is not proprietary, i.e., it is not owned or copyrighted commercially. The format and standards for HTML documents are established by the <a href="http://www.w3.org/">W3C</a> and <a href="http://www.whatwg.org/">WHATWG</a>, which are &quot;transparent,&quot; non-profit organizations devoted to the open and free development of the <a href="http://en.wikipedia.org/wiki/World_Wide_Web">WWW</a>.
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+       </div><!--/.row -->
+
+     <div class="panel  section-header">
+     	<div class="panel-body section-header">
+        	<h3>Pre-lab</h3>
+     	</div><!--/.panel-body -->
+   	</div><!--/.panel -->
+
+  	<div class="row">
+  		<div class="col-sm-12">
+       	<div class="panel panel-info">
+            <div class="panel-heading">
+              	<h2 class="panel-title">Pre-lab</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>In lab, we will used a text editor called Notepad++ to edit code, which you can download for free at home: <a href="http://notepad-plus-plus.org/download">Notepad++ Download</a></p>
+              <p>Notepad++ is also available in many of the CS labs on the 3rd floor of Roger Bacon..</p>
+              <p>If you have a Mac, <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> is a similar text editor that you can download for free. Another one is <a href="http://www.sublimetext.com/">Sublime</a>.  But, you will still have to use Notepad++ in lab, so be sure complete the pre-lab using Notepad++. Again, it is available in the CS labs.</p>
+           	</div><!--/.panel-body -->
+         </div><!--/.panel-info -->
+     	</div>
+ 	</div><!--/.row -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Pre-lab Reading</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Textbook pp 3-19</strong></li>
+              <li class="list-group-item"><a href="http://en.wikipedia.org/wiki/Notepad%2B%2B">About Notepad++ on Wikipedia</a></li>
+              <li class="list-group-item"><a href="http://notepad-plus.sourceforge.net/commun/helpFiles/Notepad++.UserManual.pdf.zip">Notepad++ User Manual</a> (for reference, do not read the whole thing)</li>
+              <li class="list-group-item"><a href="http://www.w3.org/Consortium/facts">http://www.w3.org/Consortium/facts</a> (use to answer questions about the W3C)</li>
+            </ul>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12 -->
+    </div><!--/.row -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Pre-lab Activity</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <p>Answer the pre-lab quiz questions in Blackboard as you complete the reading above and the activity below. Many of the pre-lab questions will be based on the activity below, so you really should do it.</p>
+            <ul>
+              <li>Using a web browser, visit the syllabus for this course</li>
+              
+              <li>Save the course syllabus web page as <var>syllabus.html</var> and be sure to note the location where you saved it. Depending on your computer and web browser the file could be saved in a folder called <var>Downloads</var> or it could be saved on your <var>Desktop</var>.</li>
+              
+              <li>Using Notepad++, open the syllabus web page that you just saved.</li>
+              
+              <li>Take note of how Notepad++ uses color to highlight the syntax of the HTML code. Typically, HTML elements (markup tags) are colored blue, attributes are red, values are purple, comments are green, and the actual text content is black.</li>
+              
+              <li>Click on the <var>View</var> menu, select <var>Document Map</var>, and use the document map to move around the document.</li>
+
+              <li>Move to the  very bottom of the document and create a new line by hitting enter. Then, type the letters <code>c</code> <code>o</code> <code>l</code> and press CTRL-Space (i.e., hold the CTRL key and press the space bar). Take note of what happens when you typed CTRL-Space. It if worked, it should gives you a list of HTML elements and attributes that start with the letters you typed. This is very helpful if you cannot remember the exactly spelling of HTML key words.</li>
+
+              <li>Download the following Adobe PDF file: <a href="syllabus.pdf">syllabus.pdf</a></li>
+
+              <li>Open the file in Notepad++ and try to find the any of the text content, i.e., course learning goals, required textbook, grading, etc.</li>
+
+              <li>Click on the View menu and select Summary. Use the Summary tool to compare the size of the two files (<var>syllabus.pdf</var> and <var>syllabus.html</var>). Consider this information for the pre-lab questions.</li>
+            </ul>
+
+            <p class="notice"><strong>Be sure to complete the activity and answer the pre-lab questions in Blackboard before the start of the lab period.</strong></p>
+          </div> <!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12 -->
+    </div><!--/.row -->
+
+    <div class="panel  section-header">
+      <div class="panel-body section-header">
+        <h3>In-lab</h3>
+     	</div><!--/.panel-body -->
+   	</div><!--/.panel -->
+
+   	<div class="row">
+   	 	<div class="col-sm-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Info</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+					 <em>Note that these instructions are not always detailed. You must figure out some of the detail by reading the textbook and investigating online sources. You can always ask your instructor for help. If your instructor is busy helping others, raise your hand to make sure the instructor sees that you need help, but then put your hand down and go back to work. As you wait for help, try your best to  solve the problem on your own by reading the textbook.</em>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-6 -->
+
+  		<div class="col-sm-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Working with others</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+					   <p><em>You can work together with a partner during lab. But after the lab session is over, you must complete this activity independently. Be sure to email your partner relevant files before the end of the lab session. </em></p>
+					   <p>You should <strong>not</strong> collaborate with anyone outside of the designated two-hour lab session.</p></em>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-primary -->
+     	</div><!--/.col-sm-6 -->
+ 	  </div><!--/.row -->
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Preparation</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <ul>
+              <li>On your <var>Z: Drive</var> create a folder for this course. You might already have a folder for storing your course files. Call the folder <var>csis180</var>. Inside this new folder create a sub-folder called <var>labs</var> and inside this folder create sub-folders called <var>lab1</var>, <var>lab2</var>, <var>lab3</var>, <var>lab4</var>, ..., <var>lab11</var>. In lab, you will always put all your files in the sub-folder for the lab. This will help you stay organized as you may need to refer back to lab files for project and for exam studying.</li>
+
+              <li>Note that the folder names are lowercase. For folder and file names, <strong>always use lowercase</strong> letters and <strong>never use spaces</strong>. When specifying a file name in a hyperlink or when typing a URL, the case of the letters matter. Consider that if you are not consistent, there are four possible file names:<var> Lab 1</var>, <var>Lab1</var>, <var>lab 1</var> or <var>lab1</var> for your lab folder. Think about why being consistent will help you later on.</li>
+
+              <li>If you have a USB flash drive and would prefer to store your files there, you can do so, but it is your responsibility to keep and protect your flash drive for the entire semester.</li>
+            </ul>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12 -->
+    </div><!--/.row -->
+
+    <div class="row">
+      <div class="col-sm-12">
+    		<div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Textbook Exercises</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">Follow the instructions in the textbook for <strong>exercise 4-1 through 4-5 and read pages 53-67</strong>. <br>
+
+              <div class="thumbnail sch-apr">
+                <em>It is very important to read the pages as you do the exercises. While you may be tempted to download the solution without doing the reading and actual exercises, the purpose of this work is to learn   concepts  and details that you will need to know to complete the rest of the lab and to answer exam questions.</em>
+              </div></li>
+
+              <li class="list-group-item">Be sure to store all the files  in the appropriate lab folder and use Notepad++ throughout the lab.</li>
+
+              <li class="list-group-item">After you are finished with <strong>exercise 4-5</strong>, be sure your file is saved as <var>index.html</var>  and validate it at <a href="http://validator.w3.org/#validate_by_upload"><strong>http://validator.w3.org/#validate_by_upload</strong></a></li>
+
+              <li class="list-group-item">Your <var>index.html</var> document should validate with only warnings and no errors. </li>
+
+              <li class="list-group-item"><strong>Show your instructor that <var>index.html</var> validates.</strong></li>
+            </ul>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12-->
+    </div><!--/.row -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Activity</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+          <p><em>You can work together with a partner during lab. But after the lab session is over, you must complete this activity independently. Be sure to email your partner relevant files before the end of the lab session. You should not collaborate with your partner outside of the designated two-hour lab session.</em></p>
+          <ul>
+            <li>Answer the following questions by creating an HTML document using Notepad++ called <var>lab1.html</var> that includes the questions below and your answers. </li>
+
+            <li>Note that in order to display HTML tags you must use special character codes instead of simply typing &lt; and &gt;. You can  look at the HTML source of these lab instructions to figure out how I displayed these symbols. </li>
+
+            <li>Your HTML document must validate, must have the required minimum structure described in the book and <strong>must use all of the following tags appropriately</strong>: <code>html</code>, <code>head</code>, <code>meta</code>, <code>title</code>, <code>body</code>, <code>h1</code>, <code>h2</code>, <code>p</code>, <code>ol</code>, <code>ul</code>, and <code>li</code>  </li>
+          </ul>
+
+          <div class="thumbnail">
+            <h4>Lab 1 Questions</h4>
+            <p><strong>by [Insert Your Name Here]</strong></p>
+            <ol>
+              <li>Most HTML elements have a start tag and an end tag with text content in between. But, the reading presented several elements that only have one tag (the start tag). Which elements only  have one tag and  why is it not necessary for them to have end tags.</li>
+
+              <li>We used a meta tag in lab to define the character set. Why would HTML allow you to use a different character set? Hint: Think about the fact that HTML is for the <strong>World</strong> Wide Web.</li>
+
+              <li>A web page title typically appears in two places (in the head using the  <code>title</code> tag and in the body using an <code>h1</code> header). What is the difference between these two places and why is it useful to put a meaningful title in both places.</li>
+
+              <li>It is a common convention to name HTML files with all lowercase letters.  Why is this convention helpful/useful?</li>
+
+              <li>There are certain symbols that cannot be used in a URL. Thus, they should not be used in the name of an HTML file. List five symbols that cannot be used.</li>
+
+              <li>Fix the following HTML validation errors
+                <ul>
+                  <li>&lt;img scr=&quot;birthday&quot;&gt;</li>
+                  <li>&lt;h1&gt;Hello&lt;\h2&gt;</li>
+                  <li>&lt;a href=&quot;file.html&quot; Home&lt;/a&gt;</li>
+                  <li>&lt;p&gt;First paragraph&lt;p&gt;Second paragraph&lt;/p&gt;</li>
+                </ul>
+              </li>
+
+              <li>How  are HTML documents superior to PDF documents?</li>
+            </ol>
+          </div><!--/.thumbnail -->
+        </div><!--/.panel-body -->
+      </div><!--/.panel-info -->
+    </div><!--/.col-sm-12-->
+  </div><!--/.row -->
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title">Deliverables</h2>
+        </div><!--/.panel-heading -->
+
+        <div class="panel-body">
+          <div class="thumbnail sch-mar">
+            Upload your <var>lab1.html</var> file with your answer to Blackboard. You will be graded based on the quality of your answers. But also, your document must validate as HTML5 with only one warning and no errors, and it must  properly use all the required tags: <code>html</code>, <code>head</code>, <code>meta</code>, <code>title</code>, <code>body</code>, <code>h1</code>, <code>h2</code>, <code>p</code>, <code>ol</code>, <code>ul</code>, and <code>li</code>
+          </div><!--/.thumbnail -->
+        </div><!--/.panel-body -->
+      </div><!--/.panel-danger -->
+    </div><!--/.col-sm-12-->
+	</div><!--/.row -->
+  
+  </div><!--/container-->
+ </div><!--/content-->
+
+ <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+       <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+        &copy; 2017 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/docs.min.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Web Design Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="ico/favicon.ico">
+
+    <title>CSIS-180: Web Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CSIS-180: Web Design</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="schedule.html" class="active"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="syllabus.html" ><i class="fa fa-book"></i> Syllabus</a></li>
+            <li><a href="projects.html"><i class="fa fa-folder-open"></i> &nbsp;Projects</a></li>
+            <li><a href="contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <div class="page-header">
+        <h3>Course Schedule</h3>
+      </div><!--/.page-header -->
+
+      <div class="schedule">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-header">
+            <h3>Monday Lecture</h3>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-header">
+            <h3>Wednesday Lecture</h3>
+        </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-header">
+            <h3>Thursday/Friday Lab</h3>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Jan 15</h4>
+            <h5>No Class</h5>
+            <h6>Martin Luther King Day</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+            <h4>Jan 17</h4>
+            <h5>Course overview</h5>
+           <p>Go over the <a href="syllabus.html">Syllabus</a>, Information about <a href="lectureNotes/Pronoun worksheet.docx">Gender Pronouns</a>, and introduction to web design.</p>
+            <p><a href="lectureNotes/18-01-17.pptx">Agenda</a>, <a href="lectureNotes/lecture1.pptx">Class Slides</a></p>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Jan 18/19</h4>
+            <h5>No Lab</h5>
+            <h6>First week of classes</h6>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+              <h4>Jan 22</h4>
+              <h5>Internet and Browsers</h5>
+              <h6>Chapters 1 and 2</h6>
+              <ul>
+                <li>Browser vs. server</li>
+                <li>Browser history/popularity</li>
+                <li>HTML vs. CSS vs. Javascript</li>
+                <li>Internet vs. WWW</li>
+                <li>Frontend vs. backend</li>
+                <li>Darknet, VPNs, https</li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+            <h4>Jan 24</h4>
+            <h5>Web Standards and Accessibility</h5>
+            <h6>Chapter 3 pp 33-45</h6>
+            <ul>
+              <li>URL breakdown</li>
+              <li>How sites are viewed</li>
+              <li>Accessibility</li>
+              <li>Site performance</li>
+              <li>Basic HTML document</li>
+              </ul>
+              <p><a href="lectureNotes/lecture2.pptx">Notes</a></p>
+              </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+            <h4>Jan 25/26</h4>
+            <h5>Lab 0</h5>
+            <h6><a href="labs/lab0.html">Designing Systems</a></h6>
+            <ul>
+              <li>Pre-lab is due by Thursday, 1pm (1/25)</li>
+              <li>Finished lab is due by 3:30pm Friday of the following week (2/2)</li>
+            </ul>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+              <h4>Jan 29</h4>
+              <h5>Semantic markup</h5>
+              <h6>Chapter 4</h6>
+              <ul>
+                <li>How to create a file</li>
+                <li>Basic HTML file structure</li>
+                <li>Introduced HTML elements and attributes</li>
+                <li>Block vs. inline elements</li>
+                <li>Power of style sheets (CSS)</li>
+              </ul>
+              <p><a href="lectureNotes/HTML Intro.pptx">HTML Intro Notes</a>, <a href="lectureFiles/htmlIntro.html">htmlIntro.html</a>, 
+                <a href="lectureFiles/samples.html">samples.html</a>, <a href="lectureFiles/cat.jpg">cat image</a></p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-jan">
+              <h4>Jan 31</h4>
+              <h5>Lists and hyperlinks</h5>
+              <h6>Chapter 5</h6>
+              <ul>
+                <li>Lists</li>
+                <li>Nested tags</li>
+                <li>Valid/invalid HTML</li>
+                <li><a href="lectureNotes/Lists.pptx">List Notes</a></li>
+              </ul>
+              <a href="project1.html" class="btn btn-warning">Project 1 assigned </a> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+              <h4>Feb 1/2</h4>
+            <h5>Lab 1</h5>
+            <h6><a href="labs/lab1.html">HTML: Document Structure</a></h6>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 5</h4>
+            <h5>Lists and links</h5>
+            <h6>Chapter 6</h6>
+            <p>Changed due date of all future pre-labs to the Wednesday BEFORE the lab.</p><br>
+            <ul>
+              <li>Design Guides
+                <ul>
+                  <li>Siena's (protected so no link)</li>
+                  <li><a href="http://carbondesignsystem.com">Carbon</a></li>
+                </ul></li>
+              <li>Nested lists</li>
+              <li>Hyperlinks</li>
+              <li><a href="https://www.youtube.com/watch?annotation_id=annotation_2686974021&feature=iv&index=1&list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7&src_vid=Dxcc6ycZ73M&v=ZhEf7e4kopM">Link</a> to 
+                video "The Internet: Wires, Cables &amp; Wifi"
+              <li><a href="lectureNotes/listPractice.pptx">List Practice</a></li>
+              <li><a href="lectureNotes/chapter6.pptx">Link, image and directory structure notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Feb 7</h4>
+            <h5>No class</h5>
+            <h6>Snow day</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 8/9</h4>
+              <h5>Lab 2</h5>
+              <h6><a href="labs/lab2.html">HTML: Semantic Text Markup</a></h6>
+              <ul>
+              <li>Pre-lab is due by Wednesday, 11:59pm (2/7)</li>
+              <li>Finished lab is due by 3:30pm Friday of the following week (2/16)</li>
+            </ul>
+          </div>
+        </div>
+      </div><!--/.row -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 12</h4>
+           <h5>Folder hierarchies</h5>
+            <h6>Chapter 6, Continued</h6>
+            <ul>
+              <li>Finished images/hyperlinks</li>
+              <li>&lt;img&gt; and &lt;a&gt;<a href="lectureNotes/imgAFolderPractice.docx"> Practice Sheet</a></li>
+              <li>&lt;img&gt; and &lt;a&gt;<a href="lectureNotes/imgAFolderPracticeSolns.docx"> Solutions</a></li>
+              <li><a href="lectureNotes/Images.pptx">Image types</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 14</h4>
+            <h5>Image file formats</h5>
+            <h6>Chapter 7 and Chapter 21 pp 507-532</h6>
+            <ul>
+                <li><a href="lectureNotes/graphics.pptx">Graphics notes</a></li>
+                <li>Demo aspect ratio for images</li>
+                <li><a href="lectureNotes/hyperlink practice.docx">More link practice</a></li>
+                <li><a href="lectureNotes/somesite.zip">Link</a> to directory structure and files for hyperlink practice</li>
+                <li><a href="lectureFiles/imageLecture.zip">directory</a> containing html and image files from lecture</li>
+                <li><a href="https://www.youtube.com/watch?v=AYdF7b3nMto">video:</a> 
+                  <cite>The Internet: Packets, Routing &amp; Reliability</cite></li>
+            </ul>                
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 15/16</h4>
+            <h5>Lab 3</h5>
+            <h6><a href="labs/lab3.html">HTML: Hyperlinks &amp; Images</a></h6>
+            <p class="due">Project 1 due <br> 10am February 15th</p>
+            </div>
+        </div>
+      </div><!--/.row -->
+
+
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 19</h4>
+            <h5>Tables</h5>
+            <h6>Chapter 8 pp 133-146</h6>
+            <ul>
+                <li><a href="lectureNotes/chapter8 - tables.pptx">Table notes</a></li>
+                <li>How to create tables</li>
+                <li>Table tags</li>
+                <li>Borders, padding, colors</li>
+                <li><a href="lectureFiles/tableLecture.zip">directory</a> containing html files from lecture</li>
+            </ul>                
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Feb 21</h4>
+            <h5>No Class</h5>
+            <h6>Conference</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Feb 22/23</h4>
+            <h5>No Lab</h5>
+			      <h6>No Classes</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 26</h4>
+            <h5>Design decisions &amp; Cultural Color</h5>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=5o8CwafCxnU">video:</a> <cite>The Internet: IP Addresses &amp; DNS</cite></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-feb">
+            <h4>Feb 28</h4>
+            <h5>Tables and Forms</h5>
+            <h6>Chapter 8 and Chapter 9 pp 147-162</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 1/2</h4>
+            <h5>Lab 4</h5>
+            <h6><a href="labs/lab4.html">HTML: Tables &amp; Forms</a></h6>
+            <ul>
+              <li>Pre-lab is due by Wednesday, 11:59pm (2/28)</li>
+              <li>Finished lab is due by 3:30pm Friday of the following week (3/9)</li>
+            </ul>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 5</h4>
+           <h5>Friday's lab make up</h5>
+             <h6></h6>
+              <p>Due to the snow day on Friday, only students from Friday's lab need attend class
+              this day in RB304</p>
+              <a href="project2.html" class="btn btn-warning">Project 2 assigned </a> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Mar 7</h4>
+            <h5>No class</h5>
+            <h6>Snow day</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 8/9</h4>
+            <h5>Lab 5</h5>
+            <h6><a href="labs/lab5.html">Digital Multimedia</a></h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 12</h4>
+            <h5>HTML Forms, continued</h5>
+            <h6>Chapter 9 pp 163-180</h6>
+              <ul>
+                <li><a href="lectureFiles/formLecture/colorPicker.html">ColorPicker example</a></li>
+                <li><a href="lectureFiles/formLecture/formFromLecture.html">Form we made up in class</a></li>
+                <li>Review of forms, <a href="lectureNotes/moreForms.pptx">slides</a></li>
+                <li>HTML review, <a href="lectureNotes/html 2 group problems.docx">worksheet</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 14</h4>
+            <h5>Cascading Style Sheets</h5>
+            <h6>Chapter 11 pp 207-222 &amp; Chapter 12 pp 225-302</h6>
+            <ul>
+              <li><a href="lectureNotes/CSS intro.pptx">CSS notes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 15/16</h4>
+            <h5 class="due">Midterm Exam</h5>
+            <h6>Chapters 2-9</h6> 
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 19</h4>
+            <h5>CSS: Formatting Text</h5>
+            <h6>Chapter 12</h6>
+            <ul>
+                <li>Text CSS <a href="lectureFiles/CSS/lectureBGColors.html">file </a></li>
+                <li>Class exercise <a href="lectureFiles/CSS/classProblem.html">file</a></li>
+                <li>Class problem goal -- <a href="lectureFiles/CSS/classProblemGoal.png">image</a></li>
+              </ul>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 21</h4>
+            <h5>CSS floating and positioning</h5>
+            <h6>Chapter 15 pp 341-369</h6>
+            <ul>
+                <li>Finished class exercise from last class</li>
+                <li>CSS color: <a href="lectureNotes/CSS colors.pptx">notes</a></li>
+                <li>CSS boxes: <a href="lectureNotes/CSS boxes.pptx">notes</a></li>
+                <li>Sample files: 
+                  <ul>
+                    <li><a href="lectureFiles/CSS/links.html">links.html</a></li>
+                    <li><a href="lectureFiles/CSS/bgExample.html">bgExample.html</a></li>            
+                    <li><a href="lectureFiles/CSS/tulips.jpg">tulips.jpg</a></li>    
+                    </ul></li>     
+
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-mar">
+            <h4>Mar 22/23</h4>
+            <h5>Lab 6</h5>
+            <h6><a href="labs/lab6.html">CSS: Text, Colors, &amp; Backgrounds</a></h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Mar 26</h4>
+      			<h5>No Class</h5>
+      			<h6>Spring Break</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Mar 28</h4>
+            <h5>No Class</h5>
+      			<h6>Spring Break</h6>
+		      </div>
+        </div>
+        <div class="col-sm-4">
+         <div class="thumbnail sch-no">
+            <h4>Mar 29/30</h4>
+            <h5>No Class</h5>
+            <h6>Spring Break</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Apr 2</h4>
+            <h5>No Class</h5>
+      			<h6>Easter Break</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 4</h4>
+            <h5>Positioning and responsive layouts</h5>
+            <h6>Chapter 16</h6>
+            <ul>
+              <li>Floating images and text</li>
+              <li>Positioning text</li>
+              <li><a href="lectureNotes/CSS Float and Position.pptx">Slides </a></li>
+              <li>Class exercise <a href="lectureFiles/CSS/floatLecture.html">file</a></li>
+            </ul>
+            <p class="due">Project 2 Due</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Apr 5/6</h4>
+            <h5>No Lab</h5>
+            <h6>Snow day makeup</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 9</h4>
+            <h5>Creating layouts with CSS</h5>
+            <h6>Chapter 16 pp 373-397</h6>
+            <a href="project3.html" class="btn btn-warning">Project 3 assigned </a> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 11</h4>
+            <h5>Multi-column layouts</h5>
+            <h6>Chapter 16 continued</h6>
+            <ul>
+              <li>Absolute vs. relative vs. fixed formatting
+                <ul>
+                  <li><a href="lectureFiles/absolute.html">absolute formatting</a></li>
+                  <li><a href="lectureFiles/relative.html">relative formatting</a></li>
+                  <li><a href="lectureFiles/fixed.html">fixed formatting</a></li>
+                </ul></li>
+              <li>Framing images
+                <ul>
+                  <li><a href="lectureFiles/postage.html">postage stamp</a></li>
+                  <li><a href="lectureFiles/frame.html">frames</a></li>                  
+                </ul></li>
+              <li>Understanding how the drop down menu CSS works
+                <ul>
+                  <li><a href="lectureFiles/project2menu.html">Menu from project 2</a></li>
+              </ul></li>
+                
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>Apr 12/13</h4>
+            <h5>No Lab</h5>
+            <h6>Programming Contest</h6>
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 16</h4>
+            <h5>Menus/Audio/Video</h5>
+            <ul>
+              <li>Nicer drop down menu
+                <ul>
+                  <li><a href="lectureFiles/project2Nicer.html">project2Nicer.html</a></li>
+                </ul></li>
+              <li>Side menu
+                <ul>
+                  <li><a href="lectureFiles/sideMenu.html">sideMenu.html</a></li>             
+                </ul></li>
+              <li>Incorporating audio and video
+                <ul>
+                  <li><a href="lectureNotes/audioVideo.pptx">lecture slides</a></li>
+                  <li><a href="lectureFiles/audio.html">audio.html</a></li>
+                  <li><a href="lectureFiles/video/video.html">video.html</a></li>
+                  <li><a href="lectureFiles/video/animals.html">animals.html</a></li>                                    
+                  <li><a href="lectureFiles/video/youtube.html">youtube.html</a></li>   
+                </ul></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 18</h4>
+            <h5>CSS: Transitions and Transformations</h5>
+            <ul>
+              <li><a href="lectureNotes/Transitions.pptx">lecture slides</a></li>
+              <li><a href="lectureFiles/transitions/transitionsLecture2018.html"> transitionsLecture2018.html</a></li>
+              <li><a href="lectureFiles/transitions/images.zip">images</a> for today's pages</li>
+              <li><a href="lectureFiles/transitions/aquarium.html">aquarium.html </a>starter file for class</li>
+ <!--             <li><a href="lectureFiles/transitions/aquarium_final.html">aquarium_final.html </a>Finished version of this file</li> -->
+              <li>Examples from chapter 17 of book:
+                <ul>
+                  <li><a href="lectureFiles/transitions/chapter17examples.html"> chapter17examples.html</a></li>
+                  <li><a href="lectureFiles/transitions/transitions.css">transitions.css</a></li>
+                </ul></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 19/20</h4>
+            <h5>Lab 7</h5>
+            <h6><a href="labs/lab7.html">CSS: Boxes, Borders &amp; Floating</a></h6>  
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 23</h4>
+            <h5>Web Site Analysis presentations</h5>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 25</h4>
+            <h5>CSS: Transformations</h5>
+            <h6>Chapter 17</h6>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>Apr 26/27</h4>
+            <h5>Lab 8</h5>
+            <h6><a href="labs/lab8.html">CSS: Layouts with Floating &amp; Positioning</a></h6>        
+          </div>
+        </div>
+      </div><!--/row-->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail sch-apr">
+            <h4>April 30</h4>
+            <h5>Last Day of Class</h5>
+            <h6>Recap and Review</h6>
+            <p class="due">Project 3 Due</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-no">
+            <h4>May 2</h4>
+            <h5>Study for final</h5>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail sch-may">
+            <h4>Exam week</h4>
+            <h5>Final Exam!!</h5>
+          </div>
+        </div>
+      </div><!--/row-->
+      </div>
+           
+    </div><!--/.container -->
+  </div><!--/.content-->
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+       <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+        &copy; 2017 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/docs.min.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

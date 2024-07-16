@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Float Lecture</title>
+    <style>
+		img {
+		float: right;
+		margin-right: 25px;
+		}
+ 
+		.container {
+			width:700px;
+			background-color:#CCC;
+			padding: 25px;
+			margin: 20px 10px;
+			border: 2px solid black;
+			height: 500px
+			}
+
+		.posContainer {
+			position: absolute;
+			width:700px;
+			background-color:#CCC;
+			padding: 25px;
+			margin: 20px 10px;
+			border: 2px solid black;
+			height: 500px
+			}
+						
+		.clear {
+			clear: both;
+			}
+		
+		.purplebox {
+			background-color: purple;
+			width: 200px;
+			height: 200px;
+			font-size: 200%;
+			float: left;
+			margin: 2px;
+			color: white;
+			position: absolute;
+			top: 100px;
+			left: 100px;
+			z-index: 2;
+			
+		}
+		
+		.greenbox {
+			background-color: green;
+			width: 300px; 
+			height: 300px;
+			float: left;
+			margin: 4px;
+			margin-left: 175px;
+			position: relative;
+			z-index:1;
+			}
+		
+		.large {
+			font-size: 200%;
+			}
+			
+		.underline {
+			text-decoration: underline;
+			}
+			
+		.caption {
+			clear: left;
+			}
+    	  
+    </style>
+    
+  </head>
+  <body>
+
+
+		<p>
+			Here is some content. 
+			<img src="fam.jpg" height="200px">
+			This will be a long sentence to show the flow of text.  
+			This will be a long sentence to show the flow of text.  
+			This will be a long sentence to show the flow of text.  
+			This will be a long sentence to show the flow of text.  
+			This will be a long sentence to show the flow of text.  
+		</p>
+
+	<div class="clear"></div>
+	
+<div class="container">
+	<div class="purplebox">
+		<p>1. This is some text.</p>
+	</div>
+		<div class="purplebox">
+		<p>2. This is some text.</p>
+	</div>
+		<div class="purplebox">
+		<p>3. This is some text.</p>
+	</div>
+		<div class="purplebox">
+		<p>4. This is some text.</p>
+	</div>
+		<div class="purplebox">
+		<p>5. This is some text.</p>
+	</div>
+</div>
+  
+<div class="container">
+	<div class="purplebox">
+		<p>1. This is some text.</p>
+	</div>
+	<!--
+	<div class="caption">This is a caption.</div> -->
+		<div class="greenbox">
+		<p>2. This is some text.</p>
+	</div>
+	
+	<div class="clear"></div>
+	<p>yes, this is ome more <span class="large underline">random </span>text. some more random text. some more random text. some more random text. some more random text. some more random text. sse as;dlkdf a;lkjsdfl ome more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. </p>
+
+</div>
+
+
+<div class="posContainer">
+	<div class="purplebox">
+		<p>1. This is some text.</p>
+	</div>
+	<!--
+	<div class="caption">This is a caption.</div> -->
+		<div class="greenbox">
+		<p>2. This is some text.</p>
+	</div>
+	
+	<div class="clear"></div>
+	<p>yes, this is ome more <span class="large underline">random </span>text. some more random text. some more random text. some more random text. some more random text. some more random text. sse as;dlkdf a;lkjsdfl ome more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. some more random text. </p>
+
+</div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

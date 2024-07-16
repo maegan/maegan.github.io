@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Web Design Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="../ico/favicon.ico">
+
+    <title>CSIS-180: Web Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="../css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../theme.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">CSIS-180: Web Design</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="../schedule.html"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="../syllabus.html" ><i class="fa fa-book"></i> Syllabus</a></li>
+            <li><a href="../projects.html"><i class="fa fa-folder-open"></i> &nbsp;Projects</a></li>
+            <li><a href="../contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+    	<div class="page-header">
+        	<h3>Lab 6: CSS: Text, Colors, &amp; Backgrounds</h3>
+      </div><!--/.page-header -->
+     <div class="row">
+
+      	<div class="col-sm-6">
+        	<div class="panel panel-info">
+            	<div class="panel-heading">
+              		<h2 class="panel-title">Goals</h2>
+            	</div><!--/.panel-heading -->
+
+            	<div class="panel-body">
+                <p><strong>Learn about...</strong></p>
+                <ul class="list-group">
+                  <li class="list-group-item">How to apply CSS to HTML documents</li>
+                  <li class="list-group-item">About font and text-related CSS properties</li>
+                  <li class="list-group-item">How colors are defined and applied</li>
+                  <li class="list-group-item">Applying background images and patterns</li>
+                </ul>
+            	</div><!--/.panel-body -->
+       		</div><!--/.panel-info -->
+       	</div><!--/.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Key Concept</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Cascading Style Sheets (CSS) can be used define almost every aspect of an HTML document's visual presentation. The beauty of CSS is that all the pages of a logical website can share the same stylesheet, which allows a designer to change the appearance of many web pages by changing the code in one file.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+       </div><!--/.row -->
+
+     <div class="panel  section-header">
+     	<div class="panel-body section-header">
+        	<h3>Pre-lab</h3>
+     	</div><!--/.panel-body -->
+   	</div><!--/.panel -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Pre-lab Reading</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Textbook pp 207-222</strong></li>
+            </ul>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12 -->
+    </div><!--/.row -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Pre-lab Activity</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <ol>
+              <li><strong>Textbook exercise 11-1</strong></li>
+              <li><strong>Textbook exercise 11-2</strong></li>
+            </ol>
+
+            <p>Use reading and activity to answer the Pre-lab Questions. <strong>Be sure to complete the activity and answer the pre-lab questions in Blackboard before the start of the lab period.</strong></p>
+
+          </div> <!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12 -->
+    </div><!--/.row -->
+
+    <div class="panel  section-header">
+      <div class="panel-body section-header">
+        <h3>In-lab</h3>
+     	</div><!--/.panel-body -->
+   	</div><!--/.panel -->
+
+   	<div class="row">
+   	 	<div class="col-sm-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Info</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+					 <em>Note that these instructions are not always detailed. You must figure out some of the detail by reading the textbook and investigating online sources. You can always ask your instructor for help. If your instructor is busy helping others, raise your hand to make sure the instructor sees that you need help, but then put your hand down and go back to work. As you wait for help, try your best to  solve the problem on your own by reading the textbook.</em>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-6 -->
+
+  		<div class="col-sm-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Working with others</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+					   <em>You can work together with a partner during lab. But after the lab session is over, you must complete this activity independently. Be sure to email your partner relevant files before the end of the lab session. 
+					   <p>You should <strong>not</strong> collaborate with anyone outside of the designated two-hour lab session.</p></em>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-primary -->
+     	</div><!--/.col-sm-6 -->
+ 	  </div><!--/.row -->
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Preparation</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+            <ul>
+              <li>Always make sure you save your lab file in the appropriate folder, i.e., <var>lab6</var>.</li>
+              <li>For file names, only use lowercase letter and never use spaces.</li>
+            </ul>
+          </div><!--/.panel-body -->
+        </div><!--/.panel-info -->
+      </div><!--/.col-sm-12 -->
+    </div><!--/.row -->
+
+  
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Activity</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+          	<div class="activity">
+            <p><em>You can work together with a partner during lab. But you must complete this part of the lab on your own. You should not collaborate with your partner outside of the designated two-hour lab session.</em></p>
+
+            <h4>Formatting Menus</h4>
+            <ul>
+              <li>Download <var><a href="lab6/menu.html">menu.html</a></var> and save it to your <var>lab6</var> folder.</li>
+
+              <li>Use the <var>menu.html</var>file and complete <strong>exercise 12-1 through 12-7</strong> using Notepad++. Refer to <strong>pages 225-258</strong> for help.</li>
+
+              <li>It is OK to peek at the solution if you get lost, but do not look at it until you try to do all parts of the activity.</li>
+
+              <li>Make sure <var>menu.html</var> validates at <a href="http://validator.w3.org/#validate_by_upload"><strong>http://validator.w3.org/#validate_by_upload</strong></a></li>
+
+              <li>Show your instructor that <var>menu.html</var> is finished and validates.</li>
+            </ul>
+
+            <h4>Font &amp; Text Questions</h4>
+            <ul>
+              <li>In Notepad++, create a webpage called <var>lab6.html</var></li>
+                
+              <li>Remember to include the basic HTML document structure shown on page 56 (Figure 4-7).</li>
+
+              <li>Answer the following questions and use HTML  and CSS to appropriately markup and style your answers according to the instructions in the questions below. Use the HTML <code>span</code> tag with <code>class="answer"</code> to markup your answers below.  The style will be the same for all four questions.</li>
+
+              <li><p>Font &amp; Text:</p>
+                <ol>
+                  <li>What is the name of the CSS property for changing the <span style="font-family: Georgia">font type</span>. Use embedded CSS so that  <code>.answer</code>  uses the Georgia font.</li>
+
+                  <li>What is the name of the CSS property to make the <em>font italic</em>.  Use embedded CSS so that <code>.answer</code> will be italic.</li>
+
+                  <li>What is the name of the CSS property to change the <span style="color:red">text color</span>.  Use embedded CSS so that <code>.answer</code> will have red text.</li>
+    
+                  <li>What is the name of the CSS property to make <strong>text bold</strong>.  Use embedded CSS so that  <code>.answer</code>  will have bold text.</li>
+                </ol>
+              </li>
+
+              <li>In the end, the answers in your final document should look like this: <span style="font-family: Georgia; color: red; font-weight:bold; font-style: italic">answer</span>. </li>
+
+              <li>Save your <var>lab6.html</var> file. We will answer more questions at the end of the lab.</li>
+            </ul>
+
+            <h4>Adding Color</h4>
+            <ul>
+              <li>Download <var><a href="lab6/bistro.html">bistro.html</a></var> and save it to your <var>lab6</var> folder.</li>
+
+              <li>In your <var>lab6</var> folder, create a sub-folder called <var>images</var>.</li>
+
+              <li>Download the following pictures into the <var>images</var> folder you just created:
+                <ul class="noBullet">
+                  <li><var><a href="lab6/images/blackgoose.png">blackgoose.png</a></var></li>
+                  <li><var><a href="lab6/images/bullseye.png">bullseye.png</a></var></li>
+                  <li><var><a href="lab6/images/goose_shadow.png">goose_shadow.png</a></var></li>
+                  <li><var><a href="lab6/images/gooseshadow.png">gooseshadow.png</a></var></li>
+                  <li><var><a href="lab6/images/plaid.png">plaid.png</a></var></li>
+                  <li><var><a href="lab6/images/purpledot.png">purpledot.png</a></var></li>
+              </ul></li>
+
+              <li>Use the <var>bistro.html</var>file and complete <strong>exercise 13-1 through 13-7</strong> using Notepad++. Refer to <strong>pages 265-295</strong> for help.</li>
+  
+              <li>It is OK to peek at the solution if you get lost, but do not look at it until you try to do all parts of the activity.</li>
+
+              <li>Make sure <var>bistro.html</var> validates at <a href="http://validator.w3.org/#validate_by_upload"><strong>http://validator.w3.org/#validate_by_upload</strong></a></li>
+
+              <li>Show your instructor that <var>bistro.html</var> is finished and validates.</li>
+            </ul>
+
+            <h4>Color &amp; Background Questions</h4>
+            <ul>
+              <li>Continue to answer the following questions in your<var>lab6.html</var>file.</li>
+      
+              <li><p>Color &amp; Background:</p>
+                <ol start="5">
+                  <li>What is the HTML color code (#hexcode) for <span style="background-color: #FF0">yellow</span>?   Use the HTML <code>span</code> tag with <code>class="answer"</code> to markup your answer below.  Then use embedded CSS so that  <code>.answer</code> will have a <strong>background color</strong> of yellow.</li>
+
+                  <li>What is the CSS property for specifying a  <span style="background-image: url(lab6/images/purpledot.png); padding: 10px; color: white; font-weight: bold">background image</span>. You do not have to use this property, just name it.</li>
+
+                <li>What is the CSS code to position a background image so that it does not repeat and is centered horizontally at the top.  You do not have to use this property, just write the code.</li>
+              </ol></li>
+
+            <li>In the end, the answers in your final document should look like this: <span style="background-color: yellow; font-family: Georgia; color: red; font-weight:bold; font-style: italic">answer</span>. </li>
+
+            <li>Save your <var>lab6.html</var> file.</li>
+          </ul>
+		</div>
+        </div><!--/.panel-body -->
+      </div><!--/.panel-info -->
+    </div><!--/.col-sm-12-->
+  </div><!--/.row -->
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title">Deliverables</h2>
+        </div><!--/.panel-heading -->
+
+        <div class="panel-body">
+          <div class="thumbnail sch-mar">
+           	<p>Upload <var>lab6.html</var> to Blackboard.</p>
+          </div><!--/.thumbnail -->
+        </div><!--/.panel-body -->
+      </div><!--/.panel-danger -->
+    </div><!--/.col-sm-12-->
+	</div><!--/.row -->
+  
+  </div><!--/container-->
+ </div><!--/content-->
+
+ <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+       <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+        &copy; 2017 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/docs.min.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

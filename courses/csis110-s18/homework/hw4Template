@@ -1,0 +1,41 @@
+#INSERT YOUR COMMENTS HERE!
+# soundCollage():  creates a new sound out of 5 sound segments, 
+# each separated by some silence.
+
+# The first 2 sounds are unaltered, the next 3 altered in various 
+# ways according to the assignment
+
+#  CSIS110, Spring 2018
+
+import random
+
+# main function, "soundCollage()"
+def soundCollage():
+  # load original sounds into memory (use your own filenames)
+  s1 = makeSound (getMediaPath("sound1.wav"))
+  s2 = makeSound (getMediaPath("sound2.wav"))
+  
+  #create empty canvas
+  #Length:  contains 2 original sounds plus 3 altered plus space
+  #sounds plus silences
+  canvasLen = ....
+  canvas = makeEmptySound (canvasLen, 22050)  
+
+  #Insert original sounds, with silence after each
+  copy (s1, canvas, 0)
+  copy (s2, canvas, getLength(s1) + ...)
+    
+  #Three alterations and insertions ...
+  
+  #Play the final sound
+  play(canvas)
+
+# copies the "source" sound into the "target" sound starting at 
+# "start" in "target"
+def copy (source, target, start):
+  targetIndex = start
+  for sourceIndex in range(0, getLength(source)):
+    sourceValue = getSampleValueAt (source, sourceIndex)
+    setSampleValueAt (target, targetIndex, sourceValue)
+    targetIndex = targetIndex + 1
+   

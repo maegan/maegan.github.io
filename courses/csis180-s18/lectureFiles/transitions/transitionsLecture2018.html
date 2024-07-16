@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Transitions Lecture</title>
+	<style>
+		a  {
+			display:block;
+			text-decoration: none;
+			text-align:center;
+			padding: 1em 2em;
+			width:10em;
+			border-radius: 1.5em;
+			color:#fff;
+			opacity: 1;
+			background-color:mediumblue;
+			transition-property: background-color, width, color;
+			transition-duration: 0.5s, 0.5s, 0.1s;
+			transition-delay: 0.25s;
+		}
+
+		a:hover, a:focus {
+			background-color:red;
+			width:20em;
+			color:black;
+		}
+
+		a:active {
+			opacity:0;
+		}
+
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+		}
+
+		img {
+			margin-top:50px;
+		}
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			width:6em;
+			margin: 0 5px;
+			padding: .5em 1em;
+			text-decoration: none;
+			text-align: center;
+			color: #fff;
+			background-color: rgb(190,190,190);
+			border: 2px solid rgb(175, 175, 175);
+			border-radius: 6px;
+			text-shadow: #666 .1em .1em .1em;
+			box-shadow: 0 5px 3px rgba(0,0,0,.5);
+			position:relative;
+			transition-property: background-color, border-color;
+			transition-duration: .1s;
+		}
+
+		li a:hover, li a:focus {
+			width:6em;
+			color:white;
+			background-color: yellow;
+		}
+
+		li a:active {
+			top: 3px;
+			box-shadow: 0 1px 2px rgba(0,0,0,.5);
+			opacity:1;
+		}
+
+		img {
+			margin-left: 50px;
+		}
+
+		img:hover, img:focus {
+			transform:scale(1.5) rotate(-5deg) translate(50px, 30px);
+		}
+
+	</style>
+	</head>
+	<body>
+		<a href="">This is awesome</a><br>
+
+		<ul>
+  			<li><a href="">Men</a></li>
+  			<li><a href="">Women</a></li>
+  			<li><a href="">Kids</a></li>
+  			<li><a href="">SALE</a></li>
+		</ul>
+		<p></p>
+
+		<img src="redwoods.jpg">
+
+	</body>
+</html>

@@ -1,0 +1,46 @@
+# Turn all mostly-red pixels blue ("mostly=red" means within a distance of 140 of red)
+def redToBlue (pic):
+  for p in getPixels (pic):
+    if distance (getColor (p), red) < 140:
+      setColor (p, blue)
+      
+# turn bottom-right corner of a picture (100x100 pixels) white
+def whiteCorner (pic, size):
+  for x in range (getWidth(pic) - size, getWidth(pic)):
+    for y in range (getHeight(pic) - size, getHeight(pic)):
+      p = getPixelAt(pic, x, y)
+      setColor (p, white)   
+
+# Shift all samples in a sound "up" by 32767
+def upShift (sound):
+  for s in getSamples(sound):
+    value = getSampleValue (s)
+    setSampleValue (s, value + 32767)
+    
+# Cut the frequency of a sound in half (double its length so it sounds "lower")
+def halveFrequency (sound):
+  target = makeEmptySound (getLength (sound) * 2)
+  targetIndex = 0
+  for s in getSamples (sound):
+    value = getSampleValue (s)
+    setSampleValueAt (target, targetIndex, value)
+    setSampleValueAt (target, targetIndex+1, value)
+    targetIndex = targetIndex + 2
+  return target  
+
+# Count from 0 to 100 by 5s
+def countAndPrint ():
+  for i in range (0, 101, 5):
+    print i
+    
+# Print a line of 10 hellos, a line of 9 hellos, ..., a line of 1 hello
+def helloThere():
+  for i in range (11, 1, -1):
+    for j in range (1, i):
+      print "hello",
+    print
+         
+    
+
+  
+                                                              

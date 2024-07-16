@@ -1,0 +1,103 @@
+# Swap the reb and blue values of every pixel in an image
+def swapRedBlue (pic):
+  for p in getPixels (pic):
+    redVal = getRed(p)
+    blueVal = getBlue (p)
+    setRed (p, blueVal)
+    setBlue (p, redVal)
+    
+# Reduce red by 50% in top third of picture and clear blue in bottom third
+def lessRedNoBlue (pic):
+  for x in range (0, getWidth(pic)):
+    for y in range (0, getHeight(pic)/3):
+      px = getPixel (pic, x, y)
+      setRed (px, getRed(px)/2)
+  for x in range (0, getWidth (pic)):
+    for y in range (getHeight(pic)*2/3, getHeight(pic)):
+      px = getPixel (pic, x, y)
+      setBlue (px, 0)
+      
+# Create a copy of given image, but make the bottom half of the copy green
+def bottomGreen (pic):
+  target = makeEmptyPicture (getWidth (pic), getHeight(pic))
+  for x in range (0, getWidth (pic)):
+    for y in range (0, getHeight (pic)/2):
+      origColor = getColor (getPixel (pic, x, y))
+      setColor (getPixel (target, x, y), origColor)
+  for x in range (0, getWidth (pic)):
+    for y in range (getHeight(pic)/2, getHeight(pic)):
+      setColor (getPixel (target, x, y), green)
+  return target
+  
+# Create a new sound that's same as a given sound, but with a second of silence added at the beginning.
+# New sound will be 1 second longer than original.  Assumes sampling rate of 22050.
+def addSilentSecond (sound):
+  target = makeEmptySound (getLength (sound) + 22050)
+  for x in range (0, getLength (sound)):
+    value = getSampleValueAt(sound, x)
+    setSampleValueAt (target, x + 22050, value)
+  return target
+  
+# Increase volume (by doubling it) of a sound between two samples.
+def increaseVolumePart (sound, start, end):
+  for index in range (start, end):
+    value = getSampleValueAt (sound, index)
+    setSampleValueAt (sound, index, value*2)
+
+# Make a copy of a sound, with every other sample (starting at index 0) set to 0:  version 1
+def halfZeroVersion1 (sound):
+  target = makeEmptySound (getLength(sound))
+  for x in range (1, getLength(sound), 2):
+    value = getSampleValueAt (sound, x)
+    setSampleValueAt (target, x, value)
+  return target
+  
+# Make a copy of a sound, with every other sample (starting at index 0) set to 0:  version 2
+def halfZeroVersion2 (sound):
+  target = makeEmptySound (getLength(sound))
+  for x in range (0, getLength(sound)):
+    if x%2 == 1:  # x is odd
+      value = getSampleValueAt (sound, x)
+      setSampleValueAt (target, x, value)
+  return target
+  
+# Convert Fahrenheit into Celsius.  Input:  a temp. in degrees F.  
+#  Returns:  temp. in degrees C.
+def FtoC (tempF):
+  tempC = (tempF - 32)*5/9
+  return tempC
+  
+# Print letter grade corresponding to a numeric grade (90 and up is an A, etc.; 
+#  no + or - grades).  Assumes 0 <= numGrade <= 100.
+def letterGrade (numGrade):
+  if numGrade >= 90:
+    print "A"
+  if numGrade >= 80 and numGrade < 90:
+    print "B"
+  if numGrade >= 70 and numGrade < 80:
+    print "C"
+  if numGrade >= 60 and numGrade < 70:
+    print "D"
+  if numGrade < 60:
+    print "F"
+    
+# Creates and returns a new sound with double the samplingRate and length
+#  of "source".  Each sample value in "source" is duplicated twice in "target"    
+def doubleSoundLength (source):
+  #  Set up the target sound
+  sourceRate = int(getSamplingRate(source))
+  targetRate = sourceRate * 2
+  target = makeEmptySound (getLength(source)*2, targetRate)
+  
+  #  Loop through "source", copying each sample into "target" twice
+  for sourceIndex in range (0, getLength (source)):
+    value = getSampleValueAt (source, sourceIndex)
+    setSampleValueAt (target, sourceIndex*2, value)
+    setSampleValueAt (target, sourceIndex*2 + 1, value)
+  
+  return target
+  
+
+    
+    
+  

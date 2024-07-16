@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Introduction to CS Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="ico/favicon.ico">
+
+    <title>CSIS-110: Introduction to Computer Science</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">CSIS-110: Intro to CS</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="schedule.html"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="syllabus.html" class="active"><i class="fa fa-book"></i> Syllabus</a></li>
+
+            <li><a href="contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+
+    <div class="container theme-showcase" role="main">
+
+      <div class="page-header">
+        <h3>Course Syllabus</h3>
+      </div><!--/.page-header -->
+      <!-- Create panels to display content -->
+
+
+      <div class="row">
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">When does the course meet?</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+               <div class="col-sm-12">
+              <p><b>Lecture:</b></br> <span class="indent">Monday and Wednesday</span> </br> <span class="indent">
+              12:00-1:00PM</span> </br> <span class="indent">Online</span></p></div>
+              <div class="col-sm-6">
+                  <p><b>Lab Section 04H:</b> </br><span class="indent">Thursday</br><span class="indent">11:00-1:00PM
+                  </span> </br> <span class="indent"> RB350</span></p>
+              </div>
+               <div class="col-sm-6">
+              <p><b>Lab Section 05F:</b> </br><span class="indent">Friday</span></br><span class="indent"> 11:00-1:00PM
+              </span> </br> <span class="indent"> RB350</span></p>
+            </div>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Instructor</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Dr. MaryAnne Egan</br>Professor of Computer Science</p>
+              <p>Some of the courses Dr. Egan has taught over the last 20+ years at Siena include
+                Introduction to Computer Science, Web Design, Introduction to Programming,
+                Diversity in Computer Science and Web Programming. </p>
+              <a class="btn btn-warning" href="contact.html" role="button" >Contact</a>
+              <a class="btn btn-danger" href="contact.html" role="button" >Office Hours</a>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="row">
+          <div class="col-sm-12">
+             <div class="panel panel-info">
+              <div class="panel-heading">
+                <h2 class="panel-title">COVID-19 Policies</h2>
+              </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+              <p>Siena College requires students to wear appropriate face coverings (e.g. masks,
+                fully covering both mouth and nose) in all college buildings, including classrooms,
+                laboratories and studios.  If students arrive to a class, lab, studio, or office hours
+                without a face covering, they will be denied entry, and must leave and obtain a face
+                covering before they can return.  Likewise, students are required to wear face coverings
+                when in hallways within buildings and to be prepared to put one on if they come
+                within six feet of another person when traversing campus.  Students who refuse
+                forfeit the right to attend class until a mask is worn and are subject to
+                disciplinary action for violating the campus code of conduct (see policy).
+                All college employees have the right to refuse services to students if they
+                do not comply with these requirements.   </p>
+
+                <p>Students are requested to use available cleaning products to wipe down their
+                  desks or work areas when they arrive in class.  Classrooms will be thoroughly
+                  cleaned and sanitized at least once daily as well. Students with any symptoms of
+                  illness, especially those associated with COVID-19 must not attend class under
+                  any circumstances.  As with any absence, they should contact instructors to
+                  discuss missed lectures and assignments. </p>
+
+                  <p>If the instructor is quarantined due to COVID-19 exposure, the class will
+                    be offered remotely until the Instructor is able to return to campus.
+                    Additionally, Instructors may move the class to remote instruction if
+                    they feel in-person meetings are not safe.</p>
+
+              </div><!--/.panel-body -->
+            </div><!--/.panel-info -->
+          </div>
+        </div>
+
+
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Required Texts</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+             <p><a href="https://media.pearsoncmg.com/bc/abp/cs-resources/products/product.html#product,isbn=0134025547">Introduction to Computing and Programming in Python</a>, 4th ed., Guzdial and Ericson, 2016.</p>
+              <p><a href="https://www.amazon.com/Computer-Science-Illuminated-Nell-Dale/dp/1284155617">Computer Science Illuminated</a>  7th ed., Dale and Lewis, 2019. </p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Topics</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>For a complete list of topics covered see the <a href="schedule.html">Course Schedule</a></p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Pre-requisites</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>None</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Course Learning Goals</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Introduce the discipline of <strong>computer science</strong></p>
+              <p>Enhance <strong>problem-solving abilities</strong></p>
+              <p>Learn how to program and solve problems using the <strong>Python programming environment</strong></p>
+              <p>Help  acquire knowledge about computing systems in general, both <strong>hardware and software</strong></p>
+
+              <hr>
+              <p>Even if your career takes you in a direction that doesn’t require computer science or computer programming, the organization and problem-solving skills that you learn in this course can be applied in many different situations.  </p>
+              <p>By learning to program a computer, which requires very precise instructions, you can hone your problem-solving skills to a much higher degree. </p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Grades</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Grading</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Final grades for this course will be based primarily upon lab work, homework, and performance on exams.  The following weights will be used to
+              determine grades:</p>
+
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <td>5%</td>
+                    <td><strong>Class Participation/Attendance</strong></td>
+                  </tr>
+                  <tr>
+                    <td>20%</td>
+                    <td><strong>5 Homework Assignments</strong></td>
+                  </tr>
+                  <tr>
+                    <td>20%</td>
+                    <td><strong>11 Labs</strong></td>
+                  </tr>
+                  <tr>
+                    <td>15%</td>
+                    <td><strong>Exam 1</strong></td>
+                  </tr>
+                                      <td>20%</td>
+                    <td><strong>Exam 2</strong></td>
+                  </tr>
+                  <tr>
+                    <td>20%</td>
+                    <td><strong>Final Exam</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Letter grades</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Letter grades will be assigned based on your numeric final average. </p>
+              <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                  <tr>
+                    <th>Grade</th>
+                    <th>Numeric Equiv. *</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A</td><td>90-100</td>
+                    <td>A student earning this grade must demonstrate not only mastery of course material, but also originality or creativity that is appropriate to the problem solving nature of this course.</td>
+                  </tr>
+                  <tr>
+                     <td>B</td><td>80-89</td>
+                    <td>Mastery described above has a hole here and there.</td>
+                  </tr>
+                  <tr>
+                    <td>C</td><td>70-79</td>
+                    <td>Student lacks an understanding of some of the material presented in class and worked with in the lab.</td>
+                  </tr>
+                  <tr>
+                    <td>D</td><td>60-69</td>
+                    <td>Serious deficiencies in several areas that were covered in the course.</td>
+                  </tr>
+                  <tr>
+                                      <td>F</td><td>&lt;60</td>
+                    <td>Deficiencies span the better part of the course.</td>
+                  </tr>
+                </tbody>
+              </table>
+              * These are approximate ranges; + and – ranges are omitted here for brevity’s sake.
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Class Participation</h2>
+            </div><!--/.panel-heading -->
+            <div class="panel-body">
+              <p>Your participation grade is based on questions you ask and answer in class.  We expect and encourage you to come to class prepared!  See the schedule of topics for a tentative course outline including reading assignments and dates.  Also, if you aren’t in class – you can’t participate!</p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Exams</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>All exams will be closed-book and cumulative, although the second exam will stress material covered after the first exam.  In each exam, you will be permitted to bring in one sheet of paper (8.5” by 11”) with anything you like handwritten on it (you may use both sides).</p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Office Hours</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>I am available if you should run into difficulty in working on
+                your projects, homework, or labs, whether it is regarding concepts,
+                clarifications, algorithm development, or syntax problems. </p>
+              <p>If you can’t make my office hours, talk with me about scheduling
+                  an alternate time to meet or see a tutor. You should be aware that
+                  an office visit is evidence that you care about your work and your progress in the course.</p>
+              <p>You are also welcome to visit the office hours of the other professors
+                    teaching this course. Their hours are listed here: </p>
+                    <ul>
+                      <li>Dr. Goldstein Office Hours via Zoom (link in Canvas) | Drop-in (no appointment): 12:30-2:30pm Mondays and Wednesdays, and 10-11am Thursdays; other times by appointment.</li>
+                    </ul>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Homework</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Homework assignments will consist of writing short Python programs to solve problems, short answer, essay, and/or problems about general computer science topics. <strong>Late work will not be accepted.</strong> </p>
+              <p>While it is acceptable to discuss the meaning of homework assignments and general approaches to solving the problems with other students in the course, <strong>any cooperation beyond that point is not allowed.</strong> </p>
+              <p>In addition to your instructor, computer science tutors are available to answer questions you might have regarding the homework. </p>
+              <p>If you receive help from anyone other than your instructor, you must <strong>document</strong> this help in your assignment by including a written statement describing the help you received. </p>
+              <p>We strongly suggest that you avoid sitting next to other students in the class at the computer while you are working out your solutions.</p>
+              <p>For homework problems that involve programming, you may develop your programs on another system, but you must have a copy in your course account to receive credit.</p>
+              <p><strong>We reserve the right to examine any files in your course directories at any time.</strong></p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+
+
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Lab Work</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>You will work on labs with a partner, but <strong>you may not collaborate with others outside your lab partnership.</strong> </p>
+              <p>Your instructor and a Lab Assistant will be available during lab.  We will generally not tell you how to do things but will point you in the right direction.  The Lab Manual (to be distributed separately soon) has more details on the labs.  </p>
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+
+
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Student Success</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Attendance</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>You should attend all classes and labs, but of course if you are truly feeling sick or have
+                been quarantined, you should stay away.  You are responsible for all announcements and material
+                covered in class, whether or not you are physically present.  It is <strong>your</strong>
+                responsibility to obtain handouts, notes, and materials for any classes you may miss.</p>
+              <p>Do not miss an exam; make-up exams will <strong>not</strong> be given unless there is a valid
+                advance reason for missing an exam, i.e. scheduled sports event (intramural events do not count),
+                class trip, etc.  Arrangements must be made <strong>in advance</strong> by contacting your
+                instructor at least two weeks before the scheduled exam date to arrange an alternative time.
+                <em>Obviously if you are truly sick or quarantined we will make other arrangements.</em>
+            </p>
+              <p class="emphasis">NOTE:  The final exam will be during exam week.  We don’t control when it
+                is, so you should not make any plans that would cause you to miss any portion of exam week
+                until you know when all your exams are.  We will <strong>not</strong> offer alternative exam
+                times for the final exam in this situation.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+         <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Inclusive Classroom</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>In our Franciscan community, diversity is an invitation to celebrate the uniqueness of each individual, as well as
+                the cultural differences that enrich us all. I am committed to principle and will do my best to ensure that students
+                from all backgrounds and perspectives will be served equitably. The diversity that students bring to this class will be
+                viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful and
+                inclusive of the many identities of students in terms of gender, sexual orientation, disability, age, socioeconomic status,
+                ethnicity, race, culture, perspective, and other background characteristics.</p>
+
+                <p> Any student with particular learning needs should contact the <a href="https://www.siena.edu/offices/accessibility/">Office of Accessibility</a>
+                  at the start of the semester. The director of the Office of Accessibility will forward any necessary information to me.
+                  Then you and I can work out the details of any accommodations needed for this course.</p>
+
+              <p>Your suggestions about how to improve the value of diversity and inclusiveness in this course are encouraged and appreciated.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Phones</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Turn off all phones before you enter the classroom (virtually) or the lab.  If you use your phone for talking, texting, or other
+                purposes while you are in class you will be marked absent for that class and lose class participation points. If you use your
+                phone to talk or text during lab, you lose five points off the grade of that lab.  Leaving class to use your phone
+                is not acceptable unless you work for an emergency service (firefighter, EMT, police, etc.).</p>
+              <hr>
+      <!--        <p>A table and iPad with a Google Form will be available in lecture and lab to store your phones during class.  You are not obligated to use this system, but for every 7 times you have relinquished your phone during class, you will receive 1 point added to your final exam score.</p>
+      -->    </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Office Hours</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>I am available if you should run into difficulty in working on your projects, homework, or labs, whether it is regarding concepts, clarifications, algorithm development, or syntax problems.</p>
+              <p>I will be holding virtual office hours during our scheduled class period and in-person office hours.</p>
+                <p>If you can’t make my office hours, talk with me about scheduling an alternate time to meet
+                  (or Zoom) or see a tutor. You should be aware that an office visit is evidence that you care about your work and your progress in the course.</p>
+              <p>You are also welcome to visit the office hours of the other professors teaching this course.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Tutors</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Tutors will be available soon after the semester starts, usually Sun-Thu evenings; details will be announced in class and posted on the <a href="http://megfryling.com/CSISTutoring/"> tutoring web page</a>.  </p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Academic Integrity</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Everything you turn in, except for labs, must be entirely your own work. Every lab you turn in must be completed by you and your partner only.</p>
+              <p>It is important that each student maintain the highest level of academic integrity in this class.</p>
+              <p>Guidelines are provided (at the website linked below) regarding what is and what is not appropriate collaboration on labs and homework. Academic dishonesty includes such things as violating these guidelines and cheating on an exam.</p>
+              <p>For additional information regarding academic integrity, you are expected to review the full
+                <a href="https://www.siena.edu/departments/computer-science/academic-integrity-guidelines/"> Academic Integrity statement</a>  which is provided by the Computer Science Department.  </p>
+                <p>The penalty for academic dishonesty in this course is a lowered final grade for the course, up to and possibly including an F. </p>
+                <p> We reserve the right to examine any files or directories in your csis110 folder at any time.</p>
+
+
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Student resources</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>Siena College provides many academic  and other support services to help students succeed.  Please visit these sites for more information about
+              services and resources available to you:</p>
+              <ul>
+                <li><a href="https://www.siena.edu/offices/student-academic-success-and-engagement/"> Student Academic Success and Engagement (SASE)</a></li>
+                <li><a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/?taxonomy_1=&taxonomy_2=students-2">Academic Policies and Procedures</a></li>
+                <li><a href="https://www.siena.edu/resources/?audience=students&category=">Siena College Student Resources</a></li>
+
+              </ul>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+
+        </div><!-- /.col-sm-6 -->
+
+
+      </div><!-- /.row -->
+
+      <div class="panel  section-header">
+        <div class="panel-body section-header">
+          <h3>Standard Policies</h3>
+        </div><!--/.panel-body -->
+      </div><!--/.panel -->
+
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Pandemic/Emergency Preparedness</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>The College, as we've recently seen, may be forced to close in certain extraordinary circumstances,
+                such as war, famine, pestilence, massive earthquake, volcanic eruption, or the pandemic outbreak of
+                any number of devastating diseases, including but not limited to coronavirus, smallpox, malaria, leprosy, swamp fever, flu, bubonic plague, sleeping sickness, anthrax, rabies, hemorrhagic fever, pica, and hangnails.</p>
+
+              <p>You are instructed to bring all texts and a copy of the syllabus/course schedule home with
+                you in the event of a College Closure. The Academic Calendar will be adjusted upon reopening; so
+                be prepared for the possibility of a short mini-semester; rescheduled class/exam period; and /or rescheduling of the semester, depending on the length of the closure.</p>
+
+              <p>If your situation permits, you should continue with readings and assignments to the best of your ability, per the course schedule.</p>
+
+              <p>Online office hours will be used by me in order to maintain contact with my students.
+                You will be able to “check-in” with questions that you have. If you do not have internet
+                access available, I will also provide my home phone number and home address, as needed.
+                Remember, internet, mail delivery, and telephone services may also be impacted by a Pandemic or other emergency event.</p>
+
+              <p>Finally, stay connected with information regarding the status of the College’s status and Reopening schedule by monitoring the Siena website, <a href="http://www.siena.edu">www.siena.edu.</a></p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-8 -->
+
+        <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">College Policies</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p><i class="fa fa-balance-scale"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/academic-integrity-policy/">Academic integrity policy</a></p>
+              <p><i class="fa fa-universal-access"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/accessibility/">Office of Accessibility</a></p>
+              <p><i class="fa fa-fire"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/emergency-information/">Emergency preparedness</a></p>
+              <p><i class="fa fa-snowflake-o"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/severe-weather-policy/">Severe weather policy</a></p>
+              <p><i class="fa fa-user"></i>&nbsp;&nbsp; <a href="https://www.siena.edu/offices/academics/academic-policies-and-procedures/student-class-attendance-policy/">Attendance policy</a></p>
+              <p><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp; <a href="https://www.siena.edu/policies-procedures/cell-phone/"> Cell phone use</a></p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </div><!-- /.content -->
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+          &copy; 2017 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>

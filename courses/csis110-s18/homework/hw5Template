@@ -1,0 +1,36 @@
+# Create a folder called "frames" in your hw/hw5 folder, then 
+# at the command line, set the media path to your
+# hw/hw5 folder and execute the program: 
+# 
+#  setMediaPath()
+#  flick ()
+ 
+# Just in case you need them (you might or might not)
+import random
+import java.awt.Font as Font
+
+# from text, Program 175
+def writeFrame(num, dir, pict):
+  numStr = str(num)
+  if num < 10:
+    writePictureTo (pict, dir+"//frame00"+numStr+".jpg")
+  elif num >= 10 and num < 100:
+    writePictureTo (pict, dir+"//frame0"+numStr+".jpg")
+  else:
+    writePictureTo (pict, dir+"//frame"+numStr+".jpg")
+
+# create the animation
+def flick():
+  directory = getMediaPath("frames")
+
+  # create the animation (you complete this part!)
+  for frameNum in range (0, 10):  # frames 0 .. 9
+    canvas = makeEmptyPicture (300, 300)
+    addOvalFilled (canvas, frameNum * 10, frameNum*10, 18, 18, red)
+    writeFrame (frameNum, directory, canvas)
+
+  # wrap up
+  movie = makeMovieFromInitialFile (directory+"//frame000.jpg")
+  writeQuicktime (movie, getMediaPath ("flick.mov"), 30)
+  
+  return movie

@@ -1,0 +1,38 @@
+# CSIS110, HW3, Python portion (graffiti function), Spring 2018.  
+# Turns William Shatner's face into
+# something even scarier:  orange teeth, red eyes, and purple hair. 
+
+# PARTIAL PROGRAM ONLY.
+
+# Turns the teeth orange
+def teeth(facePic): 
+  orange = makeColor (255, 70, 0) 
+  for facex in range (181, 262):
+    for facey in range (309, 321):
+      p = getPixel (facePic, facex, facey)
+      color = getColor (p)
+      if (distance (color, white) < 190.0):
+        setColor (p, orange)
+
+# Turns the whites of the eyes orange: you may want to do each eye 
+# separately; it depends on the picture.  Finish the function!
+def eyes(facePic):
+  print "replace me with code to change eye color"
+  
+         
+
+# Turn hair red.  Finish the function!
+def hair(facePic):
+  print "replace me with code to change hair color"
+                                                                                                        
+# main function to carry out all of above, as described in top comment, 
+# plus display the picture.  Note you still need to add text, etc.
+# as described in the assignment.
+def graffiti():
+  shatPic = makePicture (getMediaPath ("shatner.jpg"))
+  teeth(shatPic)
+  myStyle = makeStyle(mono, bold, 34)
+  addTextWithStyle(shatPic, 30, 30, "HELLO", myStyle, red)
+  repaint (shatPic)
+  
+  

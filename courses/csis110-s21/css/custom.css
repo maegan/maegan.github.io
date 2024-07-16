@@ -1,0 +1,441 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  height: 100%;
+}
+body {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.content {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+
+.contact img {
+  width: 200px;
+  height:200px;
+  display:block;
+  margin:0 auto;
+}
+.panel-title {
+  line-height: normal;
+}
+
+.homework a.btn-danger {
+  margin-top:10px;
+}
+
+.jumbotron {
+  background-image: url("../imgs/sorrento.jpg");
+	border-radius: 0;
+  color: #BC1200;
+
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 15px 20px 5px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+/* added from footer-with-social-icons template */
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:hover, .footer a:focus{
+  text-decoration: none;
+  color:black;
+}
+
+.footer #copy {
+  text-align: center;
+  font-size:10px;
+  margin-top: 10px;
+}
+
+.footer .myCols{
+	text-align: center;
+}
+
+.footer .row {
+  padding-left: 10%;
+  padding-right:10%;
+}
+.social-networks .col-sm-3{
+  text-align: left;
+  margin-top:5px;
+  padding-left: 0;
+}
+
+.panel-body.contact-info {
+  padding-bottom:0;
+}
+
+.social-networks a{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 0px;
+    padding: 0px;
+    transition: 0.2s;
+}
+
+.social-networks a:hover{
+  text-decoration: none;
+}
+
+.social-networks .linkedin{
+  color:  #0077B4;
+}
+
+.social-networks .github{
+  color:#7F1C79;
+}
+
+.social-networks .twitter{
+  color: #059EF4;
+}
+
+.social-networks .wordpress{
+  color: #0087BE;
+}
+
+.section-header {
+  padding: 0;
+  font-weight: 600;
+  background-color: #fcfcfc;
+}
+
+.section-header p {
+  font-weight: 400;
+}
+
+.indent {
+  margin-left:10px;
+}
+
+.navbar-inverse .navbar-nav li a.active {
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-inverse  a.active {
+  font-weight: 600;
+  color: white;
+}
+
+/*!
+ * Custom styles for course websites
+ */
+
+.thumbnail {
+  display: block;
+  padding: 12px;
+  line-height: 20px;
+  border: 1px solid #aaa;
+
+}
+
+.thumbnail.warning {
+  background-color: #D7F1FA;
+}
+.schedule .due {
+	color: #822;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+
+.projects img {
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.sch-header {
+	background-color: #029acf;
+}
+
+.sch-header.h3 {
+  color: #fcfcfc;
+}
+
+.sch-jan {
+	background-color: #D7F1FA;
+	color: #000;
+}
+
+.sch-apr {
+	background-color: #F8F4C1;
+	color: #000;
+}
+
+.sch-mar {
+	background-color: #FCD8B3;
+	color: #000;
+}
+
+.sch-feb {
+	background-color: #D0E4C1;
+	color: #000;
+}
+
+.sch-may {
+	background-color: #E9D9E9;
+	color: #000;
+}
+
+.sch-sep {
+  background-color: #D7F1FA;
+  color: #000;
+}
+
+.sch-aug {
+  background-color: #F8F4C1;
+  color: #000;
+}
+
+.sch-nov {
+  background-color: #FCD8B3;
+  color: #000;
+}
+
+.sch-oct {
+  background-color: #D0E4C1;
+  color: #000;
+}
+
+.sch-no {
+	  background-color: #EDEAED;
+    color: #333;
+}
+
+.sch-exam {
+    background-color: #DB7FCA;
+    color: #000;
+}
+
+.schedule h3, .schedule h4, .schedule h5 {
+	padding: 0;
+	margin: 0;
+  font-weight: 600;
+}
+
+.schedule .sch-header h3 {
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+  color: #fcfcfc;
+}
+
+.schedule h4 {
+	font-size: 12px;
+	text-align: right;
+}
+
+.schedule h5 {
+	font-size: 16px;
+	margin-top: -12px;
+	padding-right: 50px;
+}
+
+.schedule h6 {
+  font-size:13px;
+  margin-top: 4px;
+  padding-left: 2px;
+}
+
+.schedule p {
+	font-size: 13px;
+	margin: 13px 0 0 13px;
+}
+
+.highlight {
+  padding: 2px 7px;
+  line-height: 20px;
+   font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+            font-style: normal;
+  color: #9b479f;
+  background-color: #ffd;
+  border: 1px solid #e1e1e8;
+}
+
+code,
+pre,
+var {
+  padding: 0 3px 2px;
+  line-height: 20px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+code, var {
+  padding: 2px 4px;
+  color: #d14;
+  white-space: nowrap;
+
+}
+
+code {
+  color: #44f;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+var {
+  font-style: normal;
+  color: #d1d;
+  background-color: #ffd;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+pre.prettyprint {
+  margin-bottom: 20px;
+}
+
+pre code, pre var {
+  padding: 0;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
+}
+
+/* found online for modifying simplex accordion style */
+#accordion {
+    padding:0px;
+   /* border: 1px solid #C73724;  */
+    border-radius:8px;
+    margin-bottom:0px;
+}
+#accordion .panel-heading {
+  border-radius:4px;
+
+}
+#accordion .panel.panel-default {
+  border-radius:4px;
+
+}
+#accordion h4.panel-title {
+  text-align:left;
+  font-size:15px;
+}
+#accordion a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #029acf;
+  text-decoration: none;
+}
+#accordion .panel-heading a.collapsed:hover,
+#accordion .panel-heading a.collapsed:focus {
+  background-color: #029acf;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+#accordion .panel-heading a.collapsed:hover::before,
+#accordion .panel-heading a.collapsed:focus::before {
+  color: white;
+}
+#accordion .panel-heading {
+  padding: 0;
+  font-weight:300;
+  border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+
+/*  text-align: center; */
+}
+#accordion .panel-heading a:not(.collapsed) {
+  color: white;
+  background-color: #029acf;
+  transition: all 0.2s ease-in;
+  border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* Add Indicator fontawesome icon to the left */
+#accordion .panel-heading .accordion-toggle::before {
+  font-family: 'FontAwesome';
+  content: '\f00d';
+  padding-right:10px;
+  float: left;
+  color: white;
+  font-weight: lighter;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in;
+  border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#accordion .panel-heading .accordion-toggle.collapsed::before {
+  color: #444;
+  margin-left:-10px;
+  margin-right:10px;
+  transform: rotate(-135deg);
+  transition: all 0.2s ease-in;
+  border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#head-msg {
+  margin-bottom:20px;
+}
+
+.alert h4{
+  text-align: center;
+  line-height: 120%;
+}
+
+.alert.alert-warning{
+  padding:0px;
+}
+
+.alert.alert-warning h4{
+  padding-top:10px;
+}
+
+.alert-warning .col-sm-6 {
+  padding:10px;
+}
+
+.participation th, td {
+  text-align: center;
+}
+
+p.emphasis {
+  border: 2px solid #C73724;
+  padding: 4px;
+}
