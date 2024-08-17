@@ -1,5 +1,46 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+:root {
+  --headers: #127475;
+  --subHeaders: #8fb996;
+  --text: #1d2d44;
+  --month1: rgba(233, 196, 106, .65);
+  --month2: rgba(231,111,81, .7);
+  --month3: rgba(163,177,138, .75);
+  --month4: rgba(114,9,183, .4);
+}
+
+#navbar, nav.navbar.navbar-inverse.navbar-fixed-top{
+  background-color: var(--headers);
+  color: white;
+  font-size: 1em;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.panel-info>.panel-heading, .panel-primary.projects>.panel-heading, #accordion.panel.panel-heading {
+  background-color: var(--headers);
+  color: white;
+
+}
+
+h3 {
+  font-weight: 400;
+  font-size:1.5em;
+
+}
+
+.panel-title  {
+  font-weight:400;
+}
+
+.btn-warning {
+  background-color: #f9c74f;
+  border-color: #f9c74f;
+  color: var(--text);
+}
 html {
   height: 100%;
 }
@@ -10,6 +51,7 @@ body {
   padding-bottom: 0px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  color: var(--text);
 }
 .content {
   flex: 1 0 auto;
@@ -33,7 +75,7 @@ body {
 .jumbotron {
   background-image: url("../imgs/sorrento.jpg");
 	border-radius: 0;
-  color: #BC1200;
+  color: #f28482;
 
 }
 
@@ -161,37 +203,32 @@ body {
 }
 
 .sch-header {
-	background-color: #029acf;
+	background-color: var(--headers);
+  color: white;
 }
 
-.sch-header.h3 {
-  color: #fcfcfc;
-}
 
-.sch-jan {
-	background-color: #D7F1FA;
+.month1 {
+	background-color: var(--month1);
 	color: #000;
 }
 
-.sch-apr {
-	background-color: #F8F4C1;
+.month2{
+	background-color:var(--month2);
 	color: #000;
 }
 
-.sch-mar {
-	background-color: #FCD8B3;
+.month3 {
+	background-color: var(--month3);
 	color: #000;
 }
 
-.sch-feb {
-	background-color: #D0E4C1;
+.month4 {
+	background-color: var(--month4);
 	color: #000;
 }
 
-.sch-may {
-	background-color: #E9D9E9;
-	color: #000;
-}
+
 
 .sch-no {
 	  background-color: #EDEAED;
@@ -205,10 +242,10 @@ body {
 }
 
 .schedule .sch-header h3 {
-	font-size: 14px;
+	font-size: 18px;
 	text-align: center;
 	line-height: 20px;
-  color: #fcfcfc;
+  color:var (--text); 
 }
 
 .schedule h4 {
@@ -217,7 +254,7 @@ body {
 }
 
 .schedule h5 {
-	font-size: 16px;
+	font-size: 14px;
 	margin-top: -12px;
 	padding-right: 50px;
 }
@@ -226,6 +263,7 @@ body {
   font-size:13px;
   margin-top: 4px;
   padding-left: 2px;
+  font-weight:400;
 }
 
 .schedule p {
