@@ -13,12 +13,17 @@ body {
 }
 
 .theme-showcase .navbar .container {
-  width: auto;
+  width: 100%;
+  margin: 0;
+
 }
 
 .jumbotron {
   background-image: url("imgs/keys.jpg");
+  background-size: cover;
 	border-radius: 0;
+  margin-left: -75px;
+  margin-right: -75px;
   color: #BC1200;
 }
 

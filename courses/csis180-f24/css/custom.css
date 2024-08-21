@@ -1,19 +1,22 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 :root {
-  --headers: #127475;
-  --subHeaders: #8fb996;
+  --headers: black;
+  --subHeaders: rgba(18,116,117,.75);
   --text: #1d2d44;
+  --headerText: cornsilk;
+  --activeText: gold;
+  --hoverText: lavender;
   --month1: rgba(233, 196, 106, .65);
   --month2: rgba(231,111,81, .6);
   --month3: rgba(163,177,138, .65);
   --month4: rgba(114,9,183, .3);
 }
 
-#navbar, nav.navbar.navbar-inverse.navbar-fixed-top{
+#navbar, nav.navbar.navbar-inverse.navbar-fixed-top, nav.navbar.navbar-inverse.navbar-fixed-top a{
   background-color: var(--headers);
-  color: white;
-  font-size: 1em;
+  color: var(--headerText);
+  font-size: 1.05em;
 }
 
 .navbar-brand {
@@ -21,11 +24,18 @@
 }
 
 .panel-info>.panel-heading, .panel-primary.projects>.panel-heading, #accordion.panel-group>.panel-heading {
-  background-color: var(--headers);
-  color: white;
+  background-color: var(--subHeaders);
+  color: var(--headerText);
 
 }
+footer h5 a {
+  color: var(--headerText);
+ }
 
+
+ .panel {
+  border: 1px solid var(--subHeaders);
+ }
 h3 {
   font-weight: 400;
   font-size:1.5em;
@@ -72,18 +82,20 @@ body {
   margin-top:10px;
 }
 
-.jumbotron {
+.jumbotron.contact{
   background-image: url("../imgs/sorrento.jpg");
+  background-size: cover;
 	border-radius: 0;
-  color: #f28482;
-
+margin-top:-20px;
+  color: #BC1200;
 }
 
 .footer {
   flex-shrink: 0;
   padding: 15px 20px 5px;
-  background-color: #e0e0e0;
+  background-color: var(--headers);
   text-align: center;
+  color: var(--headerText);
 }
 
 /* added from footer-with-social-icons template */
@@ -93,7 +105,7 @@ body {
 
 .footer a:hover, .footer a:focus{
   text-decoration: none;
-  color:black;
+  color: var(--hoverText) ;
 }
 
 .footer #copy {
@@ -163,14 +175,12 @@ body {
   margin-left:10px;
 }
 
-.navbar-inverse .navbar-nav li a.active {
-  font-weight: 600;
-  color: white;
+.navbar-inverse .navbar-nav li a.active  {
+  color: var(--activeText);
 }
 
-.navbar-inverse  a.active {
-  font-weight: 600;
-  color: white;
+.navbar-inverse .navbar-nav li a:hover  {
+  color: var(--hoverText);
 }
 
 /*!
@@ -204,7 +214,7 @@ body {
 }
 
 .sch-header {
-	background-color: var(--headers);
+	background-color: var(--subHeaders);
   color: white;
 }
 
