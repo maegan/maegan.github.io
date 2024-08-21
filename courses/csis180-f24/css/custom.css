@@ -20,7 +20,7 @@
   font-weight: 600;
 }
 
-.panel-info>.panel-heading, .panel-primary.projects>.panel-heading, #accordion.panel.panel-heading {
+.panel-info>.panel-heading, .panel-primary.projects>.panel-heading, #accordion.panel-group>.panel-heading {
   background-color: var(--headers);
   color: white;
 
@@ -104,6 +104,7 @@ body {
 
 .footer .myCols{
 	text-align: center;
+  color: var(--headers)
 }
 
 .footer .row {
