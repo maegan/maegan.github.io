@@ -34,7 +34,7 @@ footer h5 a {
 
 
  .panel {
-  border: 1px solid var(--subHeaders);
+  border-bottom: 1px solid var(--subHeaders);
  }
 h3 {
   font-weight: 400;
