@@ -86,8 +86,9 @@ code {
 .example {
   display: flex;
   flex-direction: row;
-  width: 300px;
+  width: 200px;
   margin: 20px 0;
+  height: 300px;
   
 }
 
