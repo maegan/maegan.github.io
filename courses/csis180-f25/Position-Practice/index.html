@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Class Acitvities</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/180icon.png">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>More (Last) in-class practice for CSS</h1>
+  </div>
+
+  <h2>Page Layout Summary</h2>
+
+  <p>Here are some main points to remember from the past few lectures:
+  <ul>
+    <li>Layouts can be <em>fixed</em> or <em>liquid</em>. The former is usually easier but not as nice on a wide variety
+      of displays </li>
+
+    <li>Techniques include <em>flexboxes, floats,</em> and <em> positioning</em>. </li>
+
+    <li>Specifying that an element is <code>float: left</code> means that text from below it can move up next to it (to
+      its right, in this example). Typically the only thing that uses <em>float</em> are images so they can be embedded
+      within text.</li>
+
+    <li>There is no <code>float: center</code>.</li>
+
+    <li>If you don't want an element coming up next to a float, you can use <code>clear:left</code> on that element.
+    </li>
+
+    <li>Two column layouts usually use a flexbox container with the flex-direction as row.</li>
+    <li>Flex <strong>containers</strong> need to have the lines <code>display: flex</code> and
+      <code>flex-direction: some direction</code>.
+    </li>
+    <li>Flex <strong>items</strong> (the things inside a flex container) need to have the line <code>flex: 1 1 x%</code>
+      .</li>
+
+  </ul>
+
+
+  <h2>CSS Exercise 1</h2>
+
+  <p>In the following exercise, we are going to convert this initial page into the page shown below. Here are
+    side-by-side screenshots:
+
+  <table id="img_compare">
+    <tr>
+      <th>Before, no CSS</th>
+      <th>After, lots of CSS (final image)</th>
+    </tr>
+    <tr>
+      <td><img src="images/initPage.png"></td>
+      <td><img src="images/finalEx1.jpg"></td>
+    </tr>
+  </table>
+
+  <p>Open <code>Excercise 1</code> under the
+    Position Practice section, do the following:
+
+  <ol>
+    <li>Make the <code>h1</code>, <code>h2</code>, and <code>h3</code> elements <span class="color">maroon</span>.</li>
+
+    <li>Put a <span class="color">maroon</span> box around the <code>nav</code> and make the background color <span
+        class="color">tan</span>.</li>
+
+    <li>Make the background color for the <code>body</code>
+      <span class="color">maroon</span>. Make the background color for the inner part <span class="color">wheat</span>.
+      Make the inner part 600px wide and center it.
+    </li>
+
+    <li>Make the image in the introduction 150px wide, with a 15px right margin. </li>
+
+    <li>The text is too close to the maroon background. Give it 10px of padding. </li>
+
+    <li>Style the <code>week</code>:
+      <ul>
+        <li>Make the background color of each tan.</li>
+        <li>Give them a 2px solid maroon border.</li>
+        <li>Put the week description text next to the author pictures.</li>
+        <li>Notice that each <code>week</code> is comprised of a <code>photo</code> class and <code>info</code> class.
+        </li>
+        <li>Make each <code>week</code> a flex container with a row direction to contain both the <code>photo</code> and
+          <code>info</code>.
+        </li>
+        <li>Give both these items the appropriate size so they look like the sample.</li>
+
+
+        <li>Give them some reasonable margin and padding.</li>
+      </ul>
+    </li>
+
+    <li>Make the things of the class <code>optional</code> maroon.</li>
+
+    <li>Make the <code>header</code> have a 4px double maroon border, but only <code>-top</code> and
+      <code>-bottom</code>, not <code>-left</code> and <code>-right</code>. Make the background color tan.
+    </li>
+
+    <li>Style the links in the <code>nav</code>:
+      <ul>
+        <li>None should have underlines</li>
+        <li>Unvisited links should be maroon</li>
+        <li>Visited links should be navy</li>
+        <li>Hovering over a link should make them white. </li>
+      </ul>
+    </li>
+
+    <li>Position the <code>nav</code> so that it appears to right of introductory text:
+      <ul>
+        <li>Notice there is a <code>div</code> with id of <code>introNav</code>. It contains both the <code>nav</code>
+          and the introductory text with the id <code>intro</code> (in that order)</li>
+        <li>Without changing the order, make <code>introNav</code> a flex container with the <code>nav</code> and
+          <code>intro</code> as it's flex items
+        </li>
+      </ul>
+    </li>
+
+    <li>Have the intro text flow around the picture of the books</li>
+
+
+  </ol>
+
+
+  <h2>Exercise 2: Fixed-width and floating images</h2>
+
+  <p>Open <code>Excercise 2</code> under the
+    Position Practice section.
+    Hit run and open in Chrome to see what happens to
+    the text and images when you resize the browser window. Then, do the following:</p>
+
+  <ol>
+    <li>Apply styling to the <code>body</code> element to set the background to lightgray. </li>
+    <li>Apply styling to the <code>img</code> elements to float them on the right side and look like
+      <a href="images/ex2pt1.png" target="_blank">this image</a>.
+    </li>
+
+    <li>Remove the comments around the aside listing the names of the characters.</li>
+    <li>Add styling to the appropriate elements in order to create the two-column layout shown in
+      <a href="images/ex2pt2.png" target="_blank">this image</a>.
+    </li>
+
+    <li>Now, remove the comment around the aside listing the names of the districts.</li>
+    <li>Without changing any of the code in the html file, add styling to the appropriate elements in order to create
+      the two-column layout shown in
+      <a href="images/ex2Final.png" target="_blank">this image</a>.
+    </li>
+  </ol>
+
+
+
+  </div>
+  <!--end of container-->
+
+
+
+
+
+
+
+</body>
+
+</html>

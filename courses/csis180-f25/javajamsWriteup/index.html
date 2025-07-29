@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Class Acitvities</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/180icon.png">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>JavaJam Case Study</h1>
+
+    <h2>Background</h2>
+
+    <p>You want to help a friend develop a web presence for their
+      shop that will display the services and provide a calendar for the performances. They would like a home page, menu
+      page, music performance schedule page, and a job opportunities page.
+    </p>
+
+    <h2>Part 1</h2>
+
+    <p> The JavaJams project has some of the pages written, but you'll notice they aren't very exciting and look
+      unprofessional. Throughout this case study we will make changes to make it look better. </p>
+    <p>Let's start:</p>
+    <ul>
+      <li>Create an external style sheet named <code>javajam.css</code> that configures the color and text for the
+        JavaJam website. </li>
+      <li>Since we are going to be using CSS, remove any references to style found in the starting
+        <code>index.html</code> (i.e. strong, em, small)
+      </li>
+      <li>Using the image below and color values, modify the Home page to look like the image. <mark>Make sure you real
+          all information in Part 1 before starting.</mark>
+        <div class="example">
+
+          <div class="colorList">
+            <div class="colorBox" id="text"></div>#221811
+            <div class="colorBox" id="bg"></div>#FCEBB6
+            <div class="colorBox" id="header"></div>#D2B48C
+            <div class="colorBox" id="hs"></div>#8C3826
+            <div class="colorBox" id="container"></div>#FEFAEB
+          </div>
+          <img src="images/firstScreen.jpg" alt="image of home page">
+        </div>
+      </li>
+
+      <li>Some things you may not notice and/or information you may need:
+        <ul>
+          <li><code>header</code> and <code>nav</code> bar are centered</li>
+          <li><code>nav</code> items are bold</li>
+          <li><code>h1</code> element is 200% line height</li>
+          <li><code>footer</code> has small font size, italics, and centered text.</li>
+          <li>A <code>div</code> with an <code>id</code> of <code>wrapper</code> needs to be created to contain all the
+            contents in the body section.</li>
+          <li>This wrapper contains the contents of the page.
+            The wrapper is centered on the overall page. Be sure to open it in a browser to ensure that it does indeed
+            center overall.</li>
+        </ul>
+      </li>
+      <li>Once your <code>index.html</code> page looks like the example, make the necessary changes to
+        <code>menu.html</code> so that it has the same appearance.
+      </li>
+    </ul>
+
+    <h2>Part 2</h2>
+    For this part we are going to work towards making changes to the home page so it looks like this image:
+    <mark>Again, make sure you read through the steps first.</mark>
+    <div class="example">
+      <img src="images/part2.jpg" width="350" alt="screenshot from part 2" class="noList">
+    </div>
+    <ol>
+      <li>Modify <code>index.html</code> to use this wireframe. To do this, you will have to add some <code>div</code>
+        tags with class names and/or ids.
+        <div class="box" id="wrapperBox">wrapper
+          <div class="box">header</div>
+          <div class="box">nav</div>
+          <div class="box">div with large image</div>
+          <div class="box">main
+            <div class="box"> div with contact info<br></div>
+          </div>
+          <div class="box">footer</div>
+        </div>
+
+      </li>
+      <li>Replace the "Relax at JavaJam" text contained within the <code>h2</code> element with "Follow the Winding Road
+        to JavaJam"</li>
+      <li>Add a paragraph with the following text below the <code>h2</code> element and above the existing paragraph:
+        <blockquote>We're a little out of the way, but take a drive in the country down
+          Garrett Bay Road to JavaJam today! Indulge in our locally roasted free-trade coffee and home-made pastries.
+          You'll feel right at home at JavaJam!</blockquote>
+      </li>
+
+      <li>Configure the text "JavaJam Coffee Bar Features:" within an <code>h3</code> element below the second paragraph
+        and above the unordered list.</li>
+      <li>Modify the CSS to display the winding road image as the background image. It should not repeat, it should fill
+        the whole window, it should be fixed and the background size should be cover. </li>
+      <li>Add a new selector for an <code>id</code> named <code>homehero</code> to configure 300px height and to display
+        the <code>hero.jpg</code> background image to fill the space without repeating.</li>
+      <li>Modify the CSS so that the <code>wrapper</code> id has a minimum width of 900px and maximum width of 1280px.
+        It should also add a drop-shadow effect on the wrapper.</li>
+      <li>Add CSS to set top and bottom padding of <code>header</code> to 5px.</li>
+      <li>Modify the CSS so the <code>h1</code> element uses a font size of 3em.</li>
+      <li>Modify the <code>nav</code> CSS to use a font size of 1.5em, 5px of top padding, and 5px of bottom padding.
+      </li>
+      <li>Add CSS to prevent the hyperlinks in the <code>nav</code> area from displaying the default underline.</li>
+      <li>Modify the CSS so that the <code>footer</code> has 1em of padding and a 2px top border using the same color as
+        the headings.</li>
+      <li>Add CSS so that the <code>main</code> element has 2em of padding on the left, right, and bottom.</li>
+    </ol>
+
+    <h2>Part 3</h2>
+    Once you have completed Part 2, we will update the menu page (<code>menu.html</code>).
+    <ol>
+      <li>Add an image element for the <code>mugs.jpg</code> image above the <code>h2</code> element in the main content
+        area. Be sure to include the alt and height attributes. Also configure the image to appear to the right of the
+        text content.</li>
+      <li>Add a paragraph with the following text below the <code>h2</code> element:
+        <blockquote>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the
+          caffeine! Join our Mug Club and get a 10% discount on each cup of coffee you purchase -- ask the barista for
+          details.</blockquote>
+      </li>
+      <li>Make any other necessary changes until the page matches this image:
+        <div class="example">
+          <img class="list" src="images/part3.jpg" width="350" alt="screenshot from part 3">
+        </div>
+      </li>
+    </ol>
+
+    <h2>Part 4</h2>
+    Now we will create the music page. The final result should look like this image:
+    <div class="example">
+      <img src="images/part4.jpg" width="350" alt="screenshot from part 4" class="noList">
+    </div>
+
+    <ol>
+      <li>Copy the <code>menu.html</code> file and rename it <code>music.html</code>.</li>
+      <li>Change the page title to an appropriate phrase.</li>
+      <li>Delete the image and description list from the page.</li>
+      <li>Replace the text in the <code>h2</code> to be "Music at JavaJam"</li>
+
+
+      <li>Add a paragraph with the following text below the <code>h2</code> element:
+        <blockquote>The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some
+          music you won't want to miss!</blockquote>
+      </li>
+      <li>The remaining content of the page will consist of two areas describing music performances. The area describing
+        each music performance consists of an <code>h4</code> element, a <code>div</code> of the class
+        <code>details</code>, and an image link.
+      </li>
+
+      <li>The <code>h4</code> elements should be "January" and "February"</li>
+      <li>After each of the <code>h4</code> elements should be a <code>div</code> of class <code>details</code>
+        containing both the image and the text.</li>
+      <li>Each image is a thumbnail that links to the full size image.</li>
+      <li>The text for the two sections are:
+        <ul>
+          <li>Melanie Morris entertains with her melodic fold style.</li>
+          <li>Tahoe Greg is back from his tour. New songs. New stories.</li>
+        </ul>
+      </li>
+      <li>Continue adding styling to CSS until your page looks like the image above.</li>
+    </ol>
+  </div> <!--end of container-->
+
+
+
+
+
+
+
+</body>
+
+</html>

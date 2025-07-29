@@ -1,0 +1,190 @@
+body {
+  font-size:15px;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  padding: 5px 15px;
+  }
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+h1 {
+    color: #922ea7; 
+    font-size: 25px;
+}
+
+h2 {
+    color: #2e9ad3; /*#0C5DA5;*/
+    font-size: 20px;
+    border-top: 1px solid #2e9ad3;
+    margin-top:20px;
+}
+
+
+h3 {
+    color: #409DD2;
+    font-size: 18px;
+}
+
+figcaption{
+   padding: 10px;
+   color: #2e9ad3;
+   text-decoration-style: dotted;
+    font-style: italic;
+    text-align: center;
+}
+
+pre {
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+figure {
+  margin: 10px;
+}
+
+footer {
+    margin: 2em 2em;
+}
+
+
+table.bordercells {
+    border-collapse: collapse;
+}
+
+table.bordercells td, table.bordercells th {
+    border: 1px solid black;
+}
+
+#img_compare { 
+  border-collapse: collapse; 
+  margin: 2em 0px; 
+}
+    
+#img_compare th, #img_compare td { 
+  border: 1px solid black; 
+}
+
+#img_compare th { 
+  text-align: center; 
+}
+
+#img_compare img { 
+  width: 100%; 
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  white-space: nowrap;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.example {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 20px 0;
+  
+}
+
+.example img {
+  flex: 1 1 80%;
+}
+
+.example img.noList {
+  margin-left: 100px;
+}
+
+.example img.list {
+  margin-left: 50px;
+}
+
+.samples {
+   display: flex;
+  flex-direction: row;
+  width: 200px;
+  margin: 20px 0;
+}
+img.logo {
+  margin-left: 100px;
+  float: left;
+}
+
+img.icon {
+  height:16px;
+  width: 16px;
+  margin-left: 30px;
+}
+.colorList {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New";
+  margin-right: 50px;
+  
+}
+.colorBox {
+  height: 55px;
+  width: 55px;
+  border: 1px solid black;
+}
+
+#text {
+  background-color: #221811;
+}
+
+
+#bg {
+  background-color: #FCEBB6;
+}
+
+
+#header {
+  background-color: #D2B48C;
+}
+
+
+#hs {
+  background-color: #8C3826;
+}
+
+
+#container {
+  background-color: #FEFAEB;
+}
+
+
+.answerBox {
+  height: 150px;
+  width: 600px;
+  border: 1px solid black;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 2px;
+  margin: 4px;
+  width: 90%;
+  padding-bottom: 8px;
+}
+
+#wrapperBox {
+  width: 200px;
+  margin-left: 150px;
+}
+li{
+  margin-bottom: 5px;
+}
+
+.intro li{
+  margin: 0;
+}
+
+.intro ul{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
