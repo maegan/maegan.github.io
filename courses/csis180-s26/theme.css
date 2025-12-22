@@ -1,0 +1,30 @@
+body {
+  padding-top: 10px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: 100%;
+  margin: 0;
+
+}
+
+.jumbotron {
+  background-image: url("imgs/keys.jpg");
+  background-size: cover;
+	border-radius: 0;
+  margin-left: -75px;
+  margin-right: -75px;
+  color: #BC1200;
+}
+
+

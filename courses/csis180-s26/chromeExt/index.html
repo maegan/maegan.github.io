@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Web Design Course, Computer Science Department, Siena College">
+    <meta name="author" content="M.A. Egan">
+    <link rel="icon" href="../../ico/favicon.ico">
+
+    <title>CSIS-180: Web Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS with theme -->
+    <link href="../../css/simplexbootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../theme.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+
+
+    <!-- needed for glyphicons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/6024ab669d.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .highlight {
+        color: red;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        padding:0;
+      }
+
+      li img {
+        margin: 10px;
+      }
+
+  </style>
+  </head>
+
+  <body>
+    <!-- divide page into content and footer for responsive sticky footer -->
+    <div class="content">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">CSIS-180: Web Design</a>
+        </div><!--/.nav-header -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="../../schedule.html"><i class="fa fa-calendar"></i> Schedule</a></li>
+            <li><a href="../../syllabus.html" ><i class="fa fa-book"></i> Syllabus</a></li>
+            <li><a href="../../projects.html"><i class="fa fa-folder-open"></i> &nbsp;Projects</a></li>
+            <li><a href="../../contact.html"><i class="fa fa-inbox"></i> &nbsp;Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+    	<div class="page-header">
+        	<h3>Creating a chrome extension with common links</h3>
+      </div><!--/.page-header -->
+     <div class="row">
+
+      	<div class="col-sm-6">
+        	<div class="panel panel-info">
+            	<div class="panel-heading">
+              		<h2 class="panel-title">Goals</h2>
+            	</div><!--/.panel-heading -->
+
+            	<div class="panel-body">
+                <p><strong>Learn about...</strong></p>
+                <ul class="list-group">
+                  <li class="list-group-item">Modifying HTML and CSS</li>
+                  <li class="list-group-item">Creating a favicon</li>
+                  <li class="list-group-item">Working with a JSON file</li>
+                  <li class="list-group-item">A little about javascript</li>
+                  <li class="list-group-item">Deploying a google chrome extension</li>
+                </ul>
+            	</div><!--/.panel-body -->
+       		</div><!--/.panel-info -->
+       	</div><!--/.col-sm-6 -->
+
+        <div class="col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Key Concept</h2>
+            </div><!--/.panel-heading -->
+
+            <div class="panel-body">
+              <p>  The purpose of this lesson is to develop a custom "launch page" that can be incorporated into the Chrome Home new tab extension.</p>
+            </div><!--/.panel-body -->
+          </div><!--/.panel-info -->
+        </div><!-- /.col-sm-6 -->
+       </div><!--/.row -->
+
+
+    <div class="panel  section-header">
+      <div class="panel-body section-header">
+        <h3>In-Class</h3>
+     	</div><!--/.panel-body -->
+   	</div><!--/.panel --> 
+
+    <div class="row" id = "2Col">
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Activity</h2>
+          </div><!--/.panel-heading -->
+
+          <div class="panel-body">
+          	<div class="activity">
+
+            <h4>Download the files</h4>
+            <ul>
+            	<li>Open the extensions project on replit.</li>
+            	<li>You should see an images directory, a docs directory and the files <var>manifest.json</var>, <var>README.md</var>, <var>tab.css</var>, <var>index.html</var>, and <var>tab.js</var>. </li>
+            </ul>
+
+            <h4>Modify the HTML</h4>
+            <ul>
+            	<li>We will look at the code in <var>index.html</var> as a class.</li>
+            	<li>Locate an image to use on the page (less than 50KB) and download it into the <var>images</var> directory.</li>
+            	<li>Once you understand the html, you may start editing the file to incorporate your own links for this page.</li>
+            	<li>Edit the img tag to reference the image you downloaded.</li>
+            	<li>Once you have the links you want and the image, we'll move on to the style sheet.</li>
+            </ul>           	
+
+
+            <h4>Modify the CSS</h4>
+            <ul>
+            	<li>We will look at the code in <var>tab.css</var> as a class.</li>
+            	<li>Modify <var>tab.css</var> by changing the declarations of <code>.links</code>, <code>.caption</code>, <code>#clockbox</code>, <code>elements</code> or any other selector found within.</li>
+            	<li>Be sure to frequently run <var>index.html</var> to see the results of any changes.</li>
+            </ul>           	
+
+            <h4>Make an icon</h4>
+            <ul>
+              <li>Go to <a href="https://favicon.io">favicon.io</a> to make an icon.<br>
+                <img src="favIconCreator.png" alt="screenshot of favIconCreator" width="60%""></li>
+              <li>Make an icon with your initial, like the one here: <img src="e_small.jpg" alt="E" height="32px"></li>
+              <li>When you download your design, it creates a zip file containing a directory of various sizes of the image.  Since we're using an existing template, we're going to make our images fit the current structure.</li>
+              <li>Open up the <code>favicon.ico</code> file in an image editor (<strong>preview</strong> or <strong>gimp</strong> or windows equivalent).</li>
+              <li>Export your icon image multiple times with multiple sizes:
+              	<ul>
+              		<li>An image of size 128x128 to a file named <var>128x128.png</var></li>
+              		<li>An image as 72x72 to a file named <var>e_small.jpg</var></li>
+              		<li>An image as 72x72 to a file named <var>rsz_n60-2stack-w_small.png</var></li>
+     			      </ul></li>
+     		     </ul>
+
+
+            <h4>JSON</h4>
+            <ul>
+              <li>We will step through the JSON powerpoint slides found here:  <a href="JSON.pptx">JSON.pptx</a></li>
+
+              <li>Open the <var>manifest.json</var> file.</li>
+              <li>Modify the items noted in red below to customize your extension.
+              <pre>
+        {
+        "manifest_version": 2,
+        "name": <span class="highlight">"Custom Web Launcher"</span>,
+        "short_name": <span class="highlight">"Web Launch"</span>,
+        "version": <span class="highlight">"0.4"</span>,
+        "description": <span class="highlight">"A Chrome new tab extension that can be customized
+        each semester. Learn how at the SIGCSE 2018 Chrome Home Workshop."</span>,
+        "icons": {
+        "128": "images/128x128.png"
+        },
+        "browser_action": {
+        "default_icon": {
+        "16": "images/rsz_n602stackw_
+        small.png"
+        },
+        "default_title": <span class="highlight">"Custom Web Launcher"</span>
+        },
+        "author": <span class="highlight">"Denise Case and Doug Hawley"</span>,
+        "chrome_url_overrides": {
+        "newtab": "tab.html"
+        },
+        }
+              </pre>
+              </li>       
+
+              <li>Save <var>manifest.json</var></li>
+            </ul>
+
+            <h4>Javascript</h4>
+            <p>We will step through the JavaScript powerpoint slides found here:  <a href="JS.pptx">JS.pptx</a></p>
+            <ol>
+              <li>Add a background image to your page
+              <ul>
+                <li>Find a background image you like.</li>
+                <li>In <var>index.html</var>, add a static background image by changing <code>
+                &lt;div id="background"&gt;</code> to <code> &lt;div id="background" style="background-image:url(http://bing.com//az/hprichbg/rb/HuangshanClouds_EN-US9460330019_1920x1080.jpg)"&gt;</code> where the url of your desired image is located in the parentheses after <code>url</code></li>
+              </ul></li>
+
+              <li>Style your background image with CSS
+                <ul>
+                  <li>In your <var>tab.css</var> file, set style for element with <code>id="background"</code> to the following (or vary it as you like).
+                  <pre>
+    #background {
+      height: 100%;
+      opacity: 1.00;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+                </pre></li></ul></li>  
+
+            <li>Call your new function when the window is created
+              <ul>
+                <li>Update the handler for <code>windows.onload</code> to call a function that will update the background image.  We will add the function <code>UpdateBackgroundImage</code> in the next section.</li>
+                <li>To do this, locate the <code>window.onload</code> function at the bottom of the file <var>tab.js</var>.  You will add the call to <code>UpdateBackgroundImage</code> so that your <code>window.onload</code> function now appears as follows:
+                  <pre>
+    window.onload = function () {
+      <span class="highlight">UpdateBackgroundImage('https://www.bing.com/HPImageArchive.aspx?format=js&amp;idx=0&amp;n=1')</span>
+      GetClock()
+      setInterval(GetClock, 1000)
+      GetGreeting()
+      setInterval(GetGreeting, 1000)
+    }</pre></li></ul></li>
+
+            <li>Add three new functions
+              <ul>
+                <li>Still in <var>tab.js</var>, add the new update function and the two helper functions to the end of your JavaScript file.
+                  <pre>
+    /**
+    * Update background image with Bing Image of the Day
+    * @param {String} url
+    */
+    function UpdateBackgroundImage(url) {
+      let xmlhttp = new window.XMLHttpRequest()
+      xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) { // when done & successful
+        console.log('Response received: ' + this.responseText)
+        var imageURL = ExtractImageURL(JSON.parse(this.responseText));
+        console.log('Image url: ' + imageURL)
+        SetBackgroundImage(imageURL)
+        }
+      };
+      xmlhttp.open("GET", url, true) // define the request as a get, to this url, asynchronous
+      xmlhttp.send() // actually send request to server
+    }
+  </pre>
+
+  <pre>
+    /**
+    * Extract first image URL from Bing response JSON.
+    * @param {Object} response
+    * @return {String} imageURL
+    */
+    function ExtractImageURL(response) {
+      var suffix = response.images[0].url
+      return 'http://bing.com/' + suffix
+    }
+  </pre>
+
+  <pre>
+    /**
+    * Set background image to imageURL
+    * @param {String} imageURL
+    */
+    function SetBackgroundImage(imageURL) {
+      document.getElementById("background").style.backgroundImage = 'url("' + imageURL + '"'
+    }</pre></li></ul></li>
+
+  <li><span class="highlight">Bonus:</span> Add a custom welcome message based on your schedule
+    <ul>
+      <li>In your <var>index.html</var> file, create a new HTML element with an <code>id="welcome"</code> just like the element with <code>id="greeting"</code>.
+      <pre>
+    &lt;span class="border" id="greeting"&gt;&lt;/span&gt;
+    &lt;span class="border" id="welcome"&gt;&lt;/span&gt;
+      </pre></li>
+      <li>Create a <code>GetWelcome()</code> function. In the function, get a new <code>Date()</code>. Use <code>if</code> statements and <code>tday[nday]</code> (e.g. Mon) to create a "Welcome to Web!" greeting based on your course schedule.  Hint: to make it easier to read, you might write one function <code>isMonOrWed()</code> to which you pass <code>nday</code> to find out if it's a web class day, and a second function to determine if the time is between 3:00pm and 4:00pm.
+      <pre>
+      let result = false
+      if (tday[nday] === 'Mon' || tday[nday] === 'Wed') {result = true}
+      return result
+    </pre>
+</li></ul></li></ol>
+   
+
+
+            <h4>Deploying your extension</h4>
+            <p>The purpose of this section is to provide an overview of how to deploy a custom Chrome new tab extension to the Chrome store.</p>
+
+            <ol>
+              <li>Slides about deployment: <a href="Deploy.pptx">Deploy.pptx</a></li>
+              <li>Ensure that you have the three images created above stored in the <var>images</var> folder:
+              <ul>
+                  <li>An image of size 128x128 to a file named <var>128x128.png</var></li>
+                  <li>An image as 72x72 to a file named <var>e_small.jpg</var></li>
+                  <li>An image as 72x72 to a file named <var>rsz_n60-2stack-w_small.png</var></li>
+              </ul></li>
+
+              <li>Verify <var>manifest.json</var>
+                <ul>
+                  <li>Make sure your <var>manifest.json</var> is correct for this version (you can use version 0.0.1 for your first upload, and will increment each updated version after that).</li>
+                  <li>Check the following fields:
+                    <ul>
+                      <li>name</li>
+                      <li>short_name</li>
+                      <li>version (recommended: 0.0.1 for the initial release)</li>
+                      <li>description</li>
+                      <li>browser_action - make sure it points to your new png files and includes a helpful tooltip.</li>
+                      <li>author</li>
+                      <li>make sure <var>index.html</var> is referring to your current <var>index.html</var> file</li>
+                    </ul></li></ul>
+                </li>
+
+               <li>Test it locally
+                <ul>
+                  <li>Download all the files into a directory on your computer.</li>
+                  <li>From that directory, right-click <var>index.html</var> and open it in chrome.</li>
+                  <li>Use the developer options to open your unpacked project.
+                    <ul>
+                      <li>Go to "More Tools -> Extensions" in browser</li>
+                      <li>Choose "load unpacked" and navigate to your working app folder<br>
+                        <img src="deploying.png" alt="chrome extensions page" width="70%"></li>
+                      <li>Open a new tab in Chrome and you should see your page.</li>
+                    </ul></li>
+                </ul>
+                </li>
+
+                <li>Optional:  Zip/pack your project for publishing<br>
+                <em class="highlight">Disclaimer:  I have not published my web launcher, so I am just relaying the information I was given for this section.  I have had no problem using my extension by keeping the app directory on a shared drive such as google drive or dropbox that is accessible from all my computers.  Once the extension is installed on a computer's Chrome browser, it will access the copy that is in the shared drive.</em>
+                <ul>
+                  <li>Be sure to include the following in your zipfile:
+                    <ul>
+                      <li><var>index.html</var></li>
+                      <li><var>tab.css</var></li>
+                      <li><var>tab.js</var></li>
+                      <li><var>manifest.json</var></li>
+                      <li><var>images</var> folder</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+
+               <li>Optional: Publish it<br>
+                <em class="highlight">Disclaimer:  I have not published my web launcher, so I am just relaying the information I was given for this section.  I have had no problem using my extension by keeping the app directory on a shared drive such as google drive or dropbox that is accessible from all my computers.  Once the extension is installed on a computer's Chrome browser, it will access the copy that is in the shared drive.</em>
+                <ul>
+                  <li>Create a new gmail just for this app</li>
+                  <li>Register and pay for a Google developer account($25)</li>
+                  <li>Go to your Google Developer Dashboard and add new item (upload your zip file - $5)</li>
+                </ul>
+              </li>
+
+              </ul>
+
+          
+          </div>
+        </div><!--/.panel-body -->
+      </div><!--/.panel-info -->
+    </div><!--/.col-sm-12-->
+  </div><!--/.row -->
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title">Deliverables</h2>
+        </div><!--/.panel-heading -->
+
+        <div class="panel-body">
+          <div class="thumbnail sch-mar">
+           	<p>No deliverables, but hopefully you have a fully functioning and useful chrome extension giving you quick access to all of your favorite links!</p>
+          </div><!--/.thumbnail -->
+        </div><!--/.panel-body -->
+      </div><!--/.panel-danger -->
+    </div><!--/.col-sm-12-->
+	</div><!--/.row -->
+  
+  </div><!--/container-->
+ </div><!--/content-->
+
+ <footer class="footer">
+    <div class="row">
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="index.html">Home</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="schedule.html">Schedule</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+       <h5><a href="syllabus.html">Syllabus</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="projects.html">Projects</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="contact.html">Contact Info</a></h5>
+      </div>
+      <div class="col-sm-2" class="myCols">
+        <h5><a href="http://www.cs.siena.edu/~maegan">Instructor</a></h5>
+      </div>
+      <div class="col-sm-1" class="myCols">
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row" id="copy">
+      <div class="col-sm-12" class="myCols">
+        &copy; 2018 MaryAnne Egan
+      </div>
+    </div><!-- /.row -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/docs.min.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+  
